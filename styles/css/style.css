@@ -19,11 +19,11 @@ html {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .nav {
   padding: 1rem 2.5rem;
-  background-color: #ccc;
   display: flex;
   justify-content: flex-end;
 }
@@ -34,6 +34,7 @@ a {
 .nav-list-main-item-link {
   display: block;
   padding: 1rem 2rem;
+  color: #925203;
 }
 .nav-sub-menu {
   position: relative;
@@ -48,16 +49,11 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border-radius: 4px;
+  border-radius: 5px;
+  transform: translate3d(0, -10px, 0);
+  transition: opacity 350ms ease, transform 350ms ease;
   opacity: 0;
   pointer-events: none;
-  transform: translate3d(0, 12px, 0);
-  transition: opacity 350ms ease;
-}
-.nav-list-about-span {
-  display: block;
-  padding: 1rem 2rem;
-  cursor: pointer;
 }
 .nav-list-about-item {
   width: 100%;
@@ -75,9 +71,10 @@ a {
   padding: 1.5rem 3rem;
 }
 
-.nav-list-about.show-sub-menu {
+.nav-sub-menu:hover .nav-list-about {
   opacity: 1;
   pointer-events: all;
+  transform: translate3d(0, 0, 0);
 }
 
 /*# sourceMappingURL=style.css.map */
