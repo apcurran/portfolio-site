@@ -6,6 +6,8 @@
 
 :root {
   --main-bg-clr: #00123b;
+  --bg-clr: #0b395b;
+  --bg-light-clr: hsl(206, 78%, 35%);
 }
 
 html,
@@ -19,6 +21,7 @@ html {
 
 a {
   text-decoration: none;
+  color: #000;
   cursor: pointer;
 }
 
@@ -33,8 +36,7 @@ a {
 }
 .nav-list-main-item-link {
   display: block;
-  padding: 1rem 2rem;
-  color: #925203;
+  padding: 1rem 2.25rem;
 }
 .nav-sub-menu {
   position: relative;
@@ -42,10 +44,10 @@ a {
 
 .nav-list-about {
   position: absolute;
-  left: -30%;
+  right: 0;
   display: flex;
   list-style: none;
-  background-color: lightblue;
+  background-color: var(--bg-clr);
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -62,19 +64,63 @@ a {
   justify-content: center;
   align-items: center;
 }
+.nav-list-about-item:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.nav-list-about-item:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 .nav-list-about-item:hover {
-  background-color: #82a8b4;
+  background-color: var(--bg-light-clr);
 }
 .nav-list-about-link {
   display: block;
-  color: #000;
   padding: 1.5rem 3rem;
+  color: #fff;
 }
 
 .nav-sub-menu:hover .nav-list-about {
   opacity: 1;
   pointer-events: all;
   transform: translate3d(0, 0, 0);
+}
+
+.nav-sub-menu-about {
+  position: relative;
+}
+.nav-sub-menu-about::after {
+  content: "";
+  top: 50%;
+  right: 10%;
+  transform: translateY(-55%);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-image: url(../../images/icon-cheveron-down.svg);
+  background-repeat: no-repeat;
+}
+
+.header {
+  position: relative;
+  min-height: 90vh;
+}
+.header-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header::before {
+  content: "";
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  transform: skewY(-8deg);
+  transform-origin: top left;
+  background-color: #ccc;
 }
 
 /*# sourceMappingURL=style.css.map */
