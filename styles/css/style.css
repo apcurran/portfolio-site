@@ -9,6 +9,7 @@
   --bg-clr: #0b395b;
   --bg-light-clr: hsl(206, 78%, 35%);
   --light-green: #41B883;
+  --dark-grey: #0c1014;
   --btn-glow: 0 0 20px rgba(65, 184, 131, .8);
 }
 
@@ -171,12 +172,51 @@ a {
   animation-delay: 1500ms;
 }
 
+.portfolio {
+  padding: 6rem 0rem;
+  background-color: #eee;
+}
+.portfolio-title {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.portfolio-cards {
+  width: 80%;
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.5rem;
+}
+
+.portfolio-card {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+.portfolio-card-img {
+  width: 100%;
+}
+.portfolio-card-icons {
+  padding: 1.5rem 2rem;
+}
+.portfolio-card-icons-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.portfolio-card-icons-item {
+  background-color: #ccc;
+  border-radius: 50%;
+}
+.portfolio-card-icons-item-link {
+  display: inline-block;
+  padding: 0.75rem;
+}
+
 .contact {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 4rem 0;
-  margin: 2rem 0;
   background-color: var(--main-bg-clr);
 }
 .contact-form {
@@ -199,6 +239,7 @@ a {
   color: #fff;
   margin-bottom: 0.9rem;
   font-size: 1.1rem;
+  font-weight: 500;
 }
 .contact-form-input {
   font-size: 1.05rem;
@@ -240,7 +281,7 @@ a {
 
 .footer {
   padding: 3rem 0;
-  background-color: var(--main-bg-clr);
+  background-color: var(--dark-grey);
 }
 .footer-icons {
   display: flex;

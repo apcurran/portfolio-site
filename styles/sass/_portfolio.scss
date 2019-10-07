@@ -1,0 +1,48 @@
+.portfolio {
+    padding: 6rem 0rem;
+    background-color: #eee;
+
+    &-title {
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    &-cards {
+        width: 80%;
+        max-width: 90%;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 1.5rem;
+    }
+}
+
+.portfolio-card {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .2);
+
+    &-img {
+        width: 100%;
+    }
+
+    &-icons {
+        padding: 1.5rem 2rem;
+
+        &-list {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &-item {
+            background-color: #ccc;
+            border-radius: 50%;
+
+            &-link {
+                display: inline-block;
+                padding: .75rem;
+            }
+        }
+    }
+
+}
