@@ -8,12 +8,13 @@
     --main-bg-clr: #00123b;
     --bg-clr: #0b395b;
     --bg-light-clr: hsl(206, 78%, 35%);
-    --bg-button-clr: #41B883;
+    --light-green: #41B883;
 }
 
 html,
 button {
-    font-family: 'Exo 2', sans-serif; 
+    font-family: 'Exo 2', sans-serif;
+    letter-spacing: .02em;
 }
 
 html {
@@ -27,3 +28,4 @@ a {
 }
 
 @import "header";
+@import "footer";

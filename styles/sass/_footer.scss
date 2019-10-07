@@ -1,0 +1,28 @@
+.footer {
+    padding: 3rem 0;
+    background-color: #181554;
+
+    &-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-link {
+            margin: 0 1rem;
+            cursor: pointer;
+            transition: opacity 200ms ease;
+
+            &:hover {
+                opacity: .6;
+            }
+        }
+    }
+
+    &-name {
+        margin-top: 1.5rem;
+        text-align: center;
+        color: hsl(0, 0%, 85%);
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}

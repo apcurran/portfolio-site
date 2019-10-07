@@ -8,12 +8,13 @@
   --main-bg-clr: #00123b;
   --bg-clr: #0b395b;
   --bg-light-clr: hsl(206, 78%, 35%);
-  --bg-button-clr: #41B883;
+  --light-green: #41B883;
 }
 
 html,
 button {
   font-family: "Exo 2", sans-serif;
+  letter-spacing: 0.02em;
 }
 
 html {
@@ -125,7 +126,7 @@ a {
   padding: 1.25rem 3rem;
   border: none;
   border-radius: 4px;
-  background-color: var(--bg-button-clr);
+  background-color: var(--light-green);
   color: #fff;
   font-size: 1.1rem;
   font-weight: 400;
@@ -146,6 +147,52 @@ a {
   transform: skewY(-9deg);
   transform-origin: top left;
   background-color: #ddd;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes float-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.header-info-logo {
+  animation-delay: 300ms;
+}
+.header-info-title {
+  animation-delay: 900ms;
+}
+.header-info-projects {
+  animation-delay: 1500ms;
+}
+
+.footer {
+  padding: 3rem 0;
+  background-color: #181554;
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icons-link {
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: opacity 200ms ease;
+}
+.footer-icons-link:hover {
+  opacity: 0.6;
+}
+.footer-name {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #d9d9d9;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
