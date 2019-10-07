@@ -181,11 +181,11 @@ a {
   text-align: center;
 }
 .portfolio-cards {
-  width: 80%;
+  width: 62.5rem;
   max-width: 90%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   grid-gap: 1.5rem;
 }
 
