@@ -8,13 +8,13 @@
     }
 
     &-cards {
-        width: 62.5rem;
+        width: 70rem;
         max-width: 90%;
         margin: 0 auto;
 
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-        grid-gap: 1.5rem;
+        grid-gap: 3rem 2rem;
     }
 }
 
@@ -26,7 +26,7 @@
     }
 
     &-icons {
-        padding: 1.5rem 2rem;
+        padding: 1rem 2rem;
 
         &-list {
             list-style: none;

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem 0;
+    padding: 6rem 0;
     background-color: var(--main-bg-clr);
 
     &-form {
@@ -63,7 +63,7 @@
             color: #fff;
             font-size: 1.1rem;
             text-transform: uppercase;
-            letter-spacing: .04em;
+            letter-spacing: .06em;
             cursor: pointer;
             transition: box-shadow 200ms ease-in-out;
 

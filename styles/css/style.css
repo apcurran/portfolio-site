@@ -108,7 +108,7 @@ a {
 
 .header {
   position: relative;
-  min-height: 90vh;
+  min-height: 95vh;
 }
 .header-info {
   margin-top: 7rem;
@@ -133,7 +133,7 @@ a {
   font-size: 1.1rem;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.06em;
   cursor: pointer;
   transition: box-shadow 200ms ease-in-out;
 }
@@ -172,6 +172,13 @@ a {
   animation-delay: 1500ms;
 }
 
+.about-me {
+  margin-top: 6rem;
+}
+.about-me-title {
+  text-align: center;
+}
+
 .portfolio {
   padding: 6rem 0rem;
   background-color: #eee;
@@ -181,12 +188,12 @@ a {
   text-align: center;
 }
 .portfolio-cards {
-  width: 62.5rem;
+  width: 70rem;
   max-width: 90%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-  grid-gap: 1.5rem;
+  grid-gap: 3rem 2rem;
 }
 
 .portfolio-card {
@@ -196,7 +203,7 @@ a {
   width: 100%;
 }
 .portfolio-card-icons {
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
 }
 .portfolio-card-icons-list {
   list-style: none;
@@ -216,7 +223,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 0;
+  padding: 6rem 0;
   background-color: var(--main-bg-clr);
 }
 .contact-form {
@@ -271,7 +278,7 @@ a {
   color: #fff;
   font-size: 1.1rem;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   cursor: pointer;
   transition: box-shadow 200ms ease-in-out;
 }
