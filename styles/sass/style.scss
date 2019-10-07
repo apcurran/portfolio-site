@@ -5,10 +5,11 @@
 }
 
 :root {
-    --main-bg-clr: #00123b;
+    --main-bg-clr: #181554;
     --bg-clr: #0b395b;
     --bg-light-clr: hsl(206, 78%, 35%);
     --light-green: #41B883;
+    --btn-glow: 0 0 20px rgba(65, 184, 131, .8);
 }
 
 html,
@@ -28,4 +29,5 @@ a {
 }
 
 @import "header";
+@import "contact";
 @import "footer";
