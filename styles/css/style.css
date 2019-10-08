@@ -14,7 +14,9 @@
 }
 
 html,
-button {
+button,
+::before,
+::after {
   font-family: "Exo 2", sans-serif;
   letter-spacing: 0.02em;
 }
@@ -215,8 +217,28 @@ a {
   border-radius: 50%;
 }
 .portfolio-card-icons-item-link {
+  position: relative;
   display: inline-block;
   padding: 0.75rem;
+}
+.portfolio-card-icons-item-link::before {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms ease-in-out;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 110%);
+  content: attr(data-tooltip);
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: #999;
+}
+.portfolio-card-icons-item-link:hover::before {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .contact {

@@ -39,8 +39,34 @@
             border-radius: 50%;
 
             &-link {
+                position: relative;
                 display: inline-block;
                 padding: .75rem;
+
+                // Begin Tooltip
+                &::before {
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: opacity 150ms ease-in-out;
+
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    transform: translate(-50%, 110%);
+                    content: attr(data-tooltip);
+                    width: 100%;
+                    text-align: center;
+                    padding: .5rem;
+                    border-radius: 4px;
+                    background-color: #999;
+                }
+
+                &:hover::before {
+                    opacity: 1;
+                    pointer-events: all;
+                }
+                // End Tooltip
+
             }
         }
     }

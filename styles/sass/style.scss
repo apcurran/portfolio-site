@@ -14,7 +14,9 @@
 }
 
 html,
-button {
+button,
+::before,
+::after {
     font-family: 'Exo 2', sans-serif;
     letter-spacing: .02em;
 }
