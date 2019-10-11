@@ -1,0 +1,25 @@
+.about-skills {
+    padding: 6rem 0;
+}
+
+.badge-icon {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 4em;
+    text-align: center;
+    padding: 1.25em;
+    border-radius: 50%;
+    background-color: rgb(16, 109, 214, .6);
+}
+
+.about-skills-badges-js-badge-img {
+    width: 35px;
+    height: 35px;
+    filter: grayscale(1);
+}
+
+.badge-icon:hover .about-skills-badges-js-badge-img {
+    filter: grayscale(0);
+}

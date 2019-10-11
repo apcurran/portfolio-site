@@ -31,7 +31,17 @@ a {
   cursor: pointer;
 }
 
+.header {
+  margin-top: 5.1875rem;
+}
+
 .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: lightblue;
+  width: 100%;
   padding: 1rem 2.5rem;
   display: flex;
   justify-content: flex-end;
@@ -43,6 +53,7 @@ a {
 .nav-list-main-item-link {
   display: block;
   padding: 1rem 2.25rem;
+  color: #000;
 }
 .nav-sub-menu {
   position: relative;
@@ -108,12 +119,16 @@ a {
   background-repeat: no-repeat;
 }
 
+.nav-list-main-item-link.active {
+  border: 2px solid green;
+}
+
 .header {
   position: relative;
-  min-height: 95vh;
+  min-height: 88vh;
 }
 .header-info {
-  margin-top: 7rem;
+  margin-top: 6.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -175,10 +190,38 @@ a {
 }
 
 .about-me {
+  background-color: lightgreen;
   margin-top: 6rem;
+  padding: 6rem 0;
 }
 .about-me-title {
   text-align: center;
+}
+
+.about-skills {
+  padding: 6rem 0;
+}
+
+.badge-icon {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 4em;
+  text-align: center;
+  padding: 1.25em;
+  border-radius: 50%;
+  background-color: rgba(16, 109, 214, 0.6);
+}
+
+.about-skills-badges-js-badge-img {
+  width: 35px;
+  height: 35px;
+  filter: grayscale(1);
+}
+
+.badge-icon:hover .about-skills-badges-js-badge-img {
+  filter: grayscale(0);
 }
 
 .portfolio {

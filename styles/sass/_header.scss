@@ -1,4 +1,15 @@
+.header {
+    margin-top: 5.1875rem; // Offset height of fixed navbar
+}
+
 .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    background-color: lightblue;
+    width: 100%;
     padding: 1rem 2.5rem;
     display: flex;
     justify-content: flex-end;
@@ -10,10 +21,10 @@
       &-item-link {
         display: block;
         padding: 1rem 2.25rem;
+        color: #000;
       }
     }
 
-    // About sub-menu
     &-sub-menu {
         position: relative;
     }
@@ -89,12 +100,17 @@
     }
 }
 
+// Section scroll highlight link styling
+.nav-list-main-item-link.active {
+    border: 2px solid green;
+}
+
 .header {
     position: relative;
-    min-height: 95vh;
+    min-height: 88vh;
 
     &-info {
-        margin-top: 7rem;
+        margin-top: 6.5rem;
         position: absolute;
         top: 50%;
         left: 50%;
