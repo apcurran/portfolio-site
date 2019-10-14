@@ -1,9 +1,49 @@
 .about-skills {
-    width: 100rem;
+    width: 90rem;
     max-width: 90%;
     margin: 0 auto;
+    padding: 6rem 0;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 2rem;
+}
+
+.about-skills-title {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+
+.about-skills-card {
+    padding: 1.5rem 6rem;
+    background-color: #eee;
+    border-top: 5px solid #40a4f4;
+    border-radius: 4px;
+
+    &-title {
+        display: inline-block;
+        padding-bottom: .25rem;
+        border-bottom: 1px solid hsl(0, 0%, 81%);
+        margin-bottom: .75rem;
+
+        font-size: 1.35rem;
+    }
+
+    &-content {
+        display: flex;
+        align-items: center;
+        margin: 1.5rem 0;
+
+        &-img {
+            margin-right: 1.25rem;
+            filter: grayscale(1);
+            transition: filter 200ms ease-in-out;
+        }
+    }
+}
+
+.about-skills-card:hover .about-skills-card-content-img {
+    filter: grayscale(0);
 }

@@ -19,6 +19,8 @@
 }
 
 .portfolio-card {
+    transform: translate3d(0, 0, 0);
+    transition: transform 350ms ease;
     box-shadow: 0 4px 14px rgba(0, 0, 0, .2);
 
     &-img {
@@ -81,4 +83,8 @@
         }
     }
 
+}
+
+.portfolio-card:hover {
+    transform: translate3d(0, -6px, 0);
 }
