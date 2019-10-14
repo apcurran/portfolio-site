@@ -11,6 +11,7 @@
   --light-green: #41B883;
   --dark-grey: #0c1014;
   --btn-glow: 0 0 20px rgba(65, 184, 131, .8);
+  --sub-heading-fz: 2.025rem;
 }
 
 html,
@@ -23,6 +24,10 @@ button,
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to bottom, #fff, #eee);
 }
 
 a {
@@ -203,11 +208,29 @@ p + p {
 }
 
 .about-me {
-  margin-top: 8rem;
+  width: 75ch;
+  max-width: 90%;
+  margin: 8rem auto 0 auto;
   padding: 6rem 0;
 }
 .about-me-title {
   text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: var(--sub-heading-fz);
+}
+
+.drop-para::first-letter {
+  color: var(--bg-clr);
+  font-size: 3.5rem;
+  line-height: 3rem;
+  float: left;
+  margin-right: 0.55rem;
+}
+
+.drop-para-smallcaps {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
 }
 
 .about-skills {
@@ -225,6 +248,7 @@ p + p {
   grid-row: 1/2;
   justify-self: center;
   margin-bottom: 2rem;
+  font-size: var(--sub-heading-fz);
 }
 
 .about-skills-card {
@@ -270,6 +294,7 @@ p + p {
   grid-row: 1/2;
   justify-self: center;
   margin-bottom: 2rem;
+  font-size: var(--sub-heading-fz);
 }
 
 .about-skills-card {
@@ -302,11 +327,12 @@ p + p {
 
 .portfolio {
   padding: 6rem 0rem;
-  background-color: #eee;
+  background-color: #ddd;
 }
 .portfolio-title {
   margin-bottom: 4rem;
   text-align: center;
+  font-size: var(--sub-heading-fz);
 }
 .portfolio-cards {
   width: 70rem;
@@ -392,7 +418,7 @@ p + p {
   margin-bottom: 6rem;
   color: #fff;
   font-weight: 400;
-  font-size: 2.1rem;
+  font-size: var(--sub-heading-fz);
 }
 .contact-form-field {
   display: flex;

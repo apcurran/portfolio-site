@@ -12,6 +12,8 @@
     --light-green: #41B883;
     --dark-grey: #0c1014;
     --btn-glow: 0 0 20px rgba(65, 184, 131, .8);
+
+    --sub-heading-fz: 2.025rem;
 }
 
 html,
@@ -24,6 +26,10 @@ button,
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to bottom, #fff, #eee);
 }
 
 a {
