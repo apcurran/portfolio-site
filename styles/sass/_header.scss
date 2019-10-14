@@ -8,7 +8,8 @@
     left: 0;
     z-index: 10;
 
-    background-color: lightblue;
+    background-color: rgba(11, 57, 91, .9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .2);
     width: 100%;
     padding: 1rem 2.5rem;
     display: flex;
@@ -19,9 +20,10 @@
       list-style: none;
 
       &-item-link {
-        display: block;
+        display: inline-block;
         padding: 1rem 2.25rem;
-        color: #000;
+        color: #fff;
+        font-weight: 500;
       }
     }
 
@@ -101,9 +103,15 @@
 }
 
 // Section scroll highlight link styling
-.nav-list-main-item-link.active {
-    border: 2px solid green;
+.nav-list-main-item-link {
+    transition: color 200ms ease-in-out;
 }
+
+.nav-list-main-item-link.active {
+    color: lightcoral;
+}
+
+
 
 .header {
     position: relative;

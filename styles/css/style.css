@@ -40,7 +40,8 @@ a {
   top: 0;
   left: 0;
   z-index: 10;
-  background-color: lightblue;
+  background-color: rgba(11, 57, 91, 0.9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   width: 100%;
   padding: 1rem 2.5rem;
   display: flex;
@@ -51,9 +52,10 @@ a {
   list-style: none;
 }
 .nav-list-main-item-link {
-  display: block;
+  display: inline-block;
   padding: 1rem 2.25rem;
-  color: #000;
+  color: #fff;
+  font-weight: 500;
 }
 .nav-sub-menu {
   position: relative;
@@ -119,8 +121,12 @@ a {
   background-repeat: no-repeat;
 }
 
+.nav-list-main-item-link {
+  transition: color 200ms ease-in-out;
+}
+
 .nav-list-main-item-link.active {
-  border: 2px solid green;
+  color: lightcoral;
 }
 
 .header {
@@ -191,7 +197,7 @@ a {
 
 .about-me {
   background-color: lightgreen;
-  margin-top: 6rem;
+  margin-top: 10rem;
   padding: 6rem 0;
 }
 .about-me-title {
@@ -199,29 +205,21 @@ a {
 }
 
 .about-skills {
-  padding: 6rem 0;
+  width: 100rem;
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
 }
 
-.badge-icon {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-width: 4em;
-  text-align: center;
-  padding: 1.25em;
-  border-radius: 50%;
-  background-color: rgba(16, 109, 214, 0.6);
-}
-
-.about-skills-badges-js-badge-img {
-  width: 35px;
-  height: 35px;
-  filter: grayscale(1);
-}
-
-.badge-icon:hover .about-skills-badges-js-badge-img {
-  filter: grayscale(0);
+.about-skills {
+  width: 100rem;
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
 }
 
 .portfolio {
@@ -247,13 +245,18 @@ a {
 .portfolio-card-img {
   width: 100%;
 }
-.portfolio-card-icons {
-  padding: 1rem 2rem;
+.portfolio-card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3.25rem;
+}
+.portfolio-card-title, .portfolio-card-icons-list {
+  margin-bottom: 0.75rem;
 }
 .portfolio-card-icons-list {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .portfolio-card-icons-item {
   background-color: #ccc;

@@ -25,13 +25,23 @@
         width: 100%;
     }
 
+    &-content {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 3.25rem;
+    }
+
+    &-title,
+    &-icons-list {
+        margin-bottom: .75rem;
+    }
+
     &-icons {
-        padding: 1rem 2rem;
 
         &-list {
             list-style: none;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
         }
 
         &-item {
