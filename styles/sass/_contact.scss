@@ -65,7 +65,7 @@
             text-transform: uppercase;
             letter-spacing: .06em;
             cursor: pointer;
-            transition: box-shadow 160ms ease-in-out;
+            transition: box-shadow 150ms ease-in-out;
 
             &:hover {
                 box-shadow: var(--btn-glow);

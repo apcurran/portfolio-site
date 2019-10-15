@@ -29,7 +29,7 @@ html {
 }
 
 body {
-    background: linear-gradient(to bottom, #fff, #eee);
+    // background: linear-gradient(to bottom, #fff, #eee);
 }
 
 a {
@@ -49,7 +49,7 @@ p + p {
 @import "header";
 @import "about-me";
 @import "about-skills";
-@import "about-skills";
+@import "about-education";
 @import "portfolio";
 @import "contact";
 @import "footer";

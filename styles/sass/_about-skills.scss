@@ -7,6 +7,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 2rem;
+
 }
 
 .about-skills-title {
@@ -20,9 +21,9 @@
 
 .about-skills-card {
     padding: 1.5rem 6rem;
-    background-color: #eee;
     border-top: 5px solid #40a4f4;
     border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
 
     &-title {
         display: inline-block;

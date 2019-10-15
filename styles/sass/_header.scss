@@ -143,7 +143,7 @@
             text-transform: uppercase;
             letter-spacing: .06em;
             cursor: pointer;
-            transition: box-shadow 160ms ease-in-out;
+            transition: box-shadow 150ms ease-in-out;
 
             &:hover {
                 box-shadow: var(--btn-glow);
@@ -160,7 +160,7 @@
         height: 100%;
         transform: skewY(-9deg);
         transform-origin: top left;
-        background-color: #ddd;
+        background-color: hsl(204, 45%, 92%);
     }
 }
 
