@@ -9,19 +9,23 @@
         margin-bottom: 1.5rem;
         font-size: var(--sub-heading-fz);
     }
+
+    &-para {
+        font-size: 1.1rem;
+    }
     
 }
 
 .drop-para::first-letter {
     color: var(--bg-clr);
-    font-size: 3.5rem;
+    font-size: 3.75rem;
     line-height: 3rem;
     float: left;
     margin-right: .55rem;
 }
 
 .drop-para-smallcaps {
-    font-size: .9rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: .09em;
 }

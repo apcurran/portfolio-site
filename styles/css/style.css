@@ -214,17 +214,20 @@ p + p {
   margin-bottom: 1.5rem;
   font-size: var(--sub-heading-fz);
 }
+.about-me-para {
+  font-size: 1.1rem;
+}
 
 .drop-para::first-letter {
   color: var(--bg-clr);
-  font-size: 3.5rem;
+  font-size: 3.75rem;
   line-height: 3rem;
   float: left;
   margin-right: 0.55rem;
 }
 
 .drop-para-smallcaps {
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.09em;
 }
@@ -348,7 +351,6 @@ p + p {
 }
 .portfolio-card-img {
   width: 100%;
-  object-fit: cover;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
@@ -359,6 +361,9 @@ p + p {
 }
 .portfolio-card-title, .portfolio-card-icons-list {
   margin-bottom: 0.75rem;
+}
+.portfolio-card-title {
+  font-weight: 400;
 }
 .portfolio-card-icons-list {
   list-style: none;
@@ -478,7 +483,7 @@ p + p {
 .footer-icons-link {
   margin: 0 1rem;
   cursor: pointer;
-  transition: opacity 200ms ease;
+  transition: opacity 180ms ease;
 }
 .footer-icons-link:hover {
   opacity: 0.6;
