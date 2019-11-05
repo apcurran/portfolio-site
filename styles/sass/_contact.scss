@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     padding: 6rem 0;
-    background-color: var(--main-bg-clr);
+    background-color: #32325d;
 
     &-form {
         width: 50rem;
@@ -35,7 +35,7 @@
             padding: .5rem;
             border: none;
             outline: none;
-            background-color: var(--main-bg-clr);
+            background-color: #32325d;
             border-bottom: 2px solid #999;
             transition: border-bottom 200ms ease;
             color: #fff;
