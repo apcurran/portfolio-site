@@ -292,7 +292,8 @@ p + p {
 }
 
 .slider {
-  transform: translate3d(0, 100px, 0);
+  will-change: transform;
+  transform: translateY(100px);
   opacity: 0;
   transition: transform 1200ms ease, opacity 1200ms ease;
 }
@@ -305,16 +306,8 @@ p + p {
   transition-delay: calc(var(--slide-delay) * 2);
 }
 
-.slider4 {
-  transition-delay: calc(var(--slide-delay) * 3);
-}
-
-.slider5 {
-  transition-delay: calc(var(--slide-delay) * 4);
-}
-
 .slider.appear {
-  transform: translate3d(0, 0, 0);
+  transform: translateY(0);
   opacity: 1;
 }
 
