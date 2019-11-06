@@ -11,7 +11,7 @@ const navLinkHighlighter = (() => {
         rootMargin: `-${navbarHeight}px 0px -60% 0px`
     };
 
-    const observerCb = (entries, observer) => {
+    function observerCb(entries, observer) {
         for (const entry of entries) {
             if (entry.isIntersecting) {
                 const currentPanelData = entry.target.dataset.section;
@@ -34,5 +34,30 @@ const navLinkHighlighter = (() => {
 
     for (const section of pageSections) {
         observer.observe(section);
+    }
+})();
+
+const fadeImages = (() => {
+    const sliders = document.querySelectorAll(".slider");
+
+    const fadeOptions = {
+        threshold: 0,
+        rootMargin: "0px 0px -60px 0px"
+    };
+
+    function observerCb(entries, observer) {
+        for (const entry of entries) {
+            if (entry.isIntersecting) {
+                console.log(entry)
+                entry.target.classList.add("appear");
+                observer.unobserve(entry.target);
+            }
+        }
+    }
+
+    const sliderObserver = new IntersectionObserver(observerCb, fadeOptions);
+
+    for (const slider of sliders) {
+        sliderObserver.observe(slider);
     }
 })();

@@ -12,6 +12,8 @@
   --dark-grey: #0c1014;
   --btn-glow: 0 0 20px rgba(65, 184, 131, .8);
   --sub-heading-fz: 2.025rem;
+  --alt-ease: cubic-bezier(.38,.63,.62,.92);
+  --slide-delay: 300ms;
 }
 
 html,
@@ -132,7 +134,7 @@ p + p {
   width: 20px;
   height: 20px;
   position: absolute;
-  background-image: url(../../images/icon-cheveron-down.svg);
+  background-image: url(../../assets/images/icon-cheveron-down.svg);
   background-repeat: no-repeat;
 }
 
@@ -201,7 +203,7 @@ p + p {
 }
 .header-info-logo, .header-info-title, .header-info-projects {
   opacity: 0;
-  animation: float-up 1000ms cubic-bezier(0.38, 0.63, 0.62, 0.92) forwards;
+  animation: float-up 1000ms var(--alt-ease) forwards;
 }
 .header-info-logo {
   animation-delay: 300ms;
@@ -287,6 +289,33 @@ p + p {
 
 .about-skills-card:hover .about-skills-card-content-img {
   filter: grayscale(0);
+}
+
+.slider {
+  transform: translate3d(0, 100px, 0);
+  opacity: 0;
+  transition: transform 1200ms ease, opacity 1200ms ease;
+}
+
+.slider2 {
+  transition-delay: var(--slide-delay);
+}
+
+.slider3 {
+  transition-delay: calc(var(--slide-delay) * 2);
+}
+
+.slider4 {
+  transition-delay: calc(var(--slide-delay) * 3);
+}
+
+.slider5 {
+  transition-delay: calc(var(--slide-delay) * 4);
+}
+
+.slider.appear {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
 }
 
 .about-education {

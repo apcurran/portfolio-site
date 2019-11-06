@@ -51,3 +51,26 @@
 .about-skills-card:hover .about-skills-card-content-img {
     filter: grayscale(0);
 }
+
+// Slide in images
+
+.slider {
+    transform: translate3d(0, 100px, 0);
+    opacity: 0;
+    transition: transform 1200ms ease,
+                opacity 1200ms ease;
+}
+
+.slider2 { transition-delay: var(--slide-delay); }
+
+.slider3 { transition-delay: calc(var(--slide-delay) * 2); }
+
+.slider4 { transition-delay: calc(var(--slide-delay) * 3); }
+
+.slider5 { transition-delay: calc(var(--slide-delay) * 4); }
+
+.slider.appear {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
