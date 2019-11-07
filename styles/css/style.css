@@ -123,6 +123,10 @@ p + p {
   transform: translate3d(0, 0, 0);
 }
 
+.hide {
+  visibility: hidden;
+}
+
 .nav-sub-menu-about {
   position: relative;
 }

@@ -1,5 +1,12 @@
 "use strict";
 
+const removeAboutHide = (() => {
+    window.onload = () => {
+        const aboutSubMenu = document.querySelector(".nav-list-about");
+        aboutSubMenu.classList.remove("hide");
+    };
+})();
+
 const navLinkHighlighter = (() => {
     // Caching DOM
     const pageSections = document.querySelectorAll(".section");
@@ -37,7 +44,7 @@ const navLinkHighlighter = (() => {
     }
 })();
 
-const fadeImages = (() => {
+const fadeInImages = (() => {
     const sliders = document.querySelectorAll(".slider");
 
     const fadeOptions = {
