@@ -13,7 +13,7 @@
   --btn-glow: 0 0 20px rgba(65, 184, 131, .8);
   --sub-heading-fz: 2.025rem;
   --alt-ease: cubic-bezier(.38,.63,.62,.92);
-  --slide-delay: 300ms;
+  --slide-delay: 500ms;
 }
 
 html,
@@ -295,7 +295,7 @@ p + p {
   will-change: transform;
   transform: translateY(100px);
   opacity: 0;
-  transition: transform 1200ms ease, opacity 1200ms ease;
+  transition: transform 1400ms ease, opacity 1400ms ease;
 }
 
 .slider2 {

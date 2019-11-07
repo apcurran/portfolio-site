@@ -48,7 +48,6 @@ const fadeImages = (() => {
     function observerCb(entries, observer) {
         for (const entry of entries) {
             if (entry.isIntersecting) {
-                console.log(entry)
                 entry.target.classList.add("appear");
                 observer.unobserve(entry.target);
             }

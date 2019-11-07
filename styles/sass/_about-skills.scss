@@ -57,8 +57,8 @@
     will-change: transform;
     transform: translateY(100px);
     opacity: 0;
-    transition: transform 1200ms ease,
-                opacity 1200ms ease;
+    transition: transform 1400ms ease,
+                opacity 1400ms ease;
 }
 
 .slider2 { transition-delay: var(--slide-delay); }
