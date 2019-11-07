@@ -24,6 +24,10 @@
 @media screen and (max-width: 37.5em) {
     .header {
         margin-top: 3.8rem; // Offset height of fixed navbar
+    
+        &-info-projects {
+            margin-top: 1rem;
+        }
     }
     
 
