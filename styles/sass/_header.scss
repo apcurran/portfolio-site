@@ -9,7 +9,7 @@
     z-index: 10;
 
     background: #fff;
-    box-shadow: 0 5px 12px rgba(0, 0, 0, .08);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, .1);
     width: 100%;
     padding: 1rem 2.5rem;
     display: flex;
@@ -22,7 +22,7 @@
       &-item-link {
         display: inline-block;
         padding: 1rem 2.25rem;
-        color: #111;
+        color: #333;
         font-weight: 500;
         font-size: 1.025rem;
       }
@@ -39,12 +39,12 @@
     display: flex;
     list-style: none;
     background-color: #fff;
-    box-shadow: 0 4px 9px rgba(0, 0, 0, .1);
+    box-shadow: 0 4px 9px rgba(0, 0, 0, .08);
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     border-radius: 5px;
-    transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -30px, 0);
     transition: opacity 350ms ease,
                 transform 350ms ease;
     opacity: 0;
@@ -84,6 +84,7 @@
 .nav-sub-menu:hover .nav-list-about {
     opacity: 1;
     pointer-events: all;
+    visibility: visible;
     transform: translate3d(0, 0, 0);
 }
 
