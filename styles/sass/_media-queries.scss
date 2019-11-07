@@ -1,0 +1,67 @@
+@media screen and (max-width: 47.5em) {
+    .about-education-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        grid-gap: 2rem;
+
+        &-img {
+            grid-column: 1 / -1;
+            grid-row: 1 / 2;
+        }
+
+        .content1 {
+            grid-column: 1 / -1;
+            grid-row: 2 / 3;
+        }
+
+        .content2 {
+            grid-column: 1 / -1;
+            grid-row: 3 / 4;
+        }
+    }
+}
+
+@media screen and (max-width: 37.5em) {
+    .nav {
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    .nav-list-about {
+        left: 0;
+        right: auto;
+
+        &-link {
+            padding: 1.1rem 2.25rem;
+        }
+    }
+
+    .nav-list-main-item-link {
+        padding: .75rem 1.5rem;
+    }
+
+    .about-skills {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .about-skills-card {
+        padding: 1.35rem 1.5rem;
+    }
+
+    .contact-form-title {
+        font-size: 1.9rem;
+        margin-bottom: 4rem;
+    }
+
+    .contact-form-field {
+        margin: 1.5rem 0;
+    }
+
+    .contact-form-label {
+        font-size: 1rem;
+    }
+
+    .contact-form-submit-btn {
+        font-size: 1.1rem;
+    }
+}
