@@ -123,6 +123,10 @@ p + p {
   transform: translate3d(0, 0, 0);
 }
 
+.nav-sub-menu:hover .nav-sub-menu-about::after {
+  transform: translateY(-45%) rotate(-180deg);
+}
+
 .hide {
   visibility: hidden;
 }
@@ -134,7 +138,8 @@ p + p {
   content: "";
   top: 50%;
   right: 10%;
-  transform: translateY(-55%);
+  transform: translateY(-55%) rotate(0);
+  transition: transform 350ms ease;
   width: 20px;
   height: 20px;
   position: absolute;
