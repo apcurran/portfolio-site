@@ -57,6 +57,11 @@
         }
     }
 
+    // Eliminate delay on mobile scroll
+    .slider2 { transition-delay: 0; }
+
+    .slider3 { transition-delay: 0; }
+
     .nav-sub-menu-about::after {
         right: 0;
     }

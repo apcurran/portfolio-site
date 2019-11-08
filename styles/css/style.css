@@ -591,6 +591,14 @@ p + p {
     padding: 1.35rem 1.5rem;
   }
 
+  .slider2 {
+    transition-delay: 0;
+  }
+
+  .slider3 {
+    transition-delay: 0;
+  }
+
   .nav-sub-menu-about::after {
     right: 0;
   }
