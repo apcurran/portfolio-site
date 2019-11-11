@@ -230,22 +230,25 @@
             </section>
         </section>
         <section class="contact section" id="contact" data-section="contact-link">
-            <form class="contact-form" name="contact" method="POST" data-netlify="true">
+            <form novalidate class="contact-form" name="contact" method="POST">
                 <h2 class="contact-form-title">Contact Me</h2>
                 <div class="contact-form-field">
                     <label for="name" class="contact-form-label">Name</label>
-                    <input type="text" class="contact-form-input" name="name" id="name">
+                    <input type="text" class="contact-form-input contact-user-input" name="name" id="name">
+                    <p class="contact-form-error" aria-live="polite"></p>
                 </div>
                 <div class="contact-form-field">
                     <label for="email" class="contact-form-label">Email</label>
-                    <input type="text" class="contact-form-input" name="email" id="email">
+                    <input type="email" class="contact-form-input contact-user-input" name="email" id="email">
+                    <p class="contact-form-error" aria-live="polite"></p>
                 </div>
                 <div class="contact-form-field">
                     <label for="message" class="contact-form-label">Message</label>
-                    <textarea rows="10" class="contact-form-textarea" name="message" id="message"></textarea>
+                    <textarea rows="8" class="contact-form-textarea contact-user-input" name="message" id="message"></textarea>
+                    <p class="contact-form-error" aria-live="polite"></p>
                 </div>
                 <div class="contact-form-field">
-                    <input type="submit" value="Submit" class="contact-form-submit-btn">
+                    <input name="submit" type="submit" value="Submit" class="contact-form-submit-btn">
                 </div>
             </form>
         </section>

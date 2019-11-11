@@ -67,3 +67,45 @@ const fadeInImages = (() => {
         sliderObserver.observe(slider);
     }
 })();
+
+const formValidation = (() => {
+    const form = document.forms.contact;
+    const nameInput = form.elements.name;
+    const emailInput = form.elements.email;
+    const messageInput = form.elements.message;
+    const allUserInputs = form.querySelectorAll(".contact-user-input");
+
+    function checkValidity(event) {
+        if (event.currentTarget.validity.valid) {
+            const currentEl = event.currentTarget;
+            const error = currentEl.nextElementSibling;
+            error.textContent = "";
+            error.classList.remove("error-active");
+        }
+    }
+
+    function finalValidity(event) {
+        allUserInputs.forEach(input => {
+            if (!input.validity.valid || input.value === "") {
+                event.preventDefault();
+                const error = input.nextElementSibling;
+                
+                if (input === nameInput) {
+                    error.textContent = "Please enter your full name.";
+                } else if (input === emailInput) {
+                    error.textContent = "Please enter a valid email address.";
+                } else if (input === messageInput) {
+                    error.textContent = "Please include a message before submitting.";
+                }
+
+                error.classList.add("error-active");
+            }
+        });
+
+    }
+
+    nameInput.addEventListener("blur", checkValidity);
+    emailInput.addEventListener("blur", checkValidity);
+    messageInput.addEventListener("blur", checkValidity);
+    form.addEventListener("submit", finalValidity);
+})();
