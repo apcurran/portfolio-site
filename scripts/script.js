@@ -3,7 +3,7 @@
 const removeAboutHide = (() => {
     window.onload = () => {
         const aboutSubMenu = document.querySelector(".nav-list-about");
-        aboutSubMenu.classList.remove("hide");
+        setTimeout(aboutSubMenu.classList.remove("hide"), 0);
     };
 })();
 
