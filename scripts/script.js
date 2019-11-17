@@ -8,7 +8,6 @@ const removeAboutHide = (() => {
 })();
 
 const navLinkHighlighter = (() => {
-    // Caching DOM
     const pageSections = document.querySelectorAll(".section");
     const navbarHeight = document.querySelector(".nav").clientHeight;
 
