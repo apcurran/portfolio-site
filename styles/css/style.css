@@ -5,9 +5,7 @@
 }
 
 :root {
-  --main-bg-clr: #181554;
   --bg-clr: #0b395b;
-  --bg-light-clr: hsl(206, 78%, 35%);
   --light-green: #41B883;
   --dark-grey: #0c1014;
   --btn-glow: 0 0 20px rgba(65, 184, 131, .8);
@@ -88,8 +86,6 @@ p + p {
   justify-content: space-around;
   align-items: center;
   border-radius: 5px;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
   transform: translate3d(0, -30px, 0);
   transition: opacity 350ms ease, transform 350ms ease;
   opacity: 0;
@@ -127,6 +123,11 @@ p + p {
 
 .nav-sub-menu:hover .nav-sub-menu-about::after {
   transform: translateY(-45%) rotate(-180deg);
+}
+
+.hide {
+  visibility: hidden;
+  display: none;
 }
 
 .nav-sub-menu-about {

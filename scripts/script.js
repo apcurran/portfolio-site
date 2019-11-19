@@ -1,11 +1,11 @@
 "use strict";
 
-// const removeAboutHide = (() => {
-//     window.onload = () => {
-//         const aboutSubMenu = document.querySelector(".nav-list-about");
-//         setTimeout(aboutSubMenu.classList.remove("hide"), 500);
-//     };
-// })();
+const removeAboutHide = (() => {
+    window.onload = () => {
+        const aboutSubMenu = document.querySelector(".nav-list-about");
+        setTimeout(aboutSubMenu.classList.remove("hide"), 1000);
+    };
+})();
 
 const navLinkHighlighter = (() => {
     const pageSections = document.querySelectorAll(".section");
