@@ -108,3 +108,10 @@ const formValidation = (() => {
     messageInput.addEventListener("blur", checkValidity);
     form.addEventListener("submit", finalValidity);
 })();
+
+const copyrightYear = (() => {
+    const yearSpan = document.querySelector(".copyright-year");
+    const date = new Date().getFullYear();
+
+    yearSpan.textContent = date;
+})();
