@@ -54,7 +54,7 @@ p + p {
   left: 0;
   z-index: 10;
   background: #fff;
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   width: 100%;
   padding: 1rem 2.5rem;
   display: flex;
@@ -81,7 +81,7 @@ p + p {
   display: flex;
   list-style: none;
   background-color: #fff;
-  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 11px rgba(0, 0, 0, 0.15);
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -107,7 +107,7 @@ p + p {
   border-bottom-right-radius: 5px;
 }
 .nav-list-about-item:hover {
-  background-color: #f7fafc;
+  background-color: #f0f6f9;
 }
 .nav-list-about-link {
   display: block;
