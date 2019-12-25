@@ -1,13 +1,14 @@
 "use strict";
 
-const removeAboutHide = (() => {
+{
     window.onload = () => {
         const aboutSubMenu = document.querySelector(".nav-list-about");
         setTimeout(aboutSubMenu.classList.remove("hide"), 1000);
     };
-})();
+}
 
-const navLinkHighlighter = (() => {
+{
+    // Nav link highlighter
     const pageSections = document.querySelectorAll(".section");
     const navbarHeight = document.querySelector(".nav").clientHeight;
 
@@ -41,9 +42,10 @@ const navLinkHighlighter = (() => {
     for (const section of pageSections) {
         observer.observe(section);
     }
-})();
+}
 
-const fadeInImages = (() => {
+{
+    // Fade in images
     const sliders = document.querySelectorAll(".slider");
 
     const fadeOptions = {
@@ -65,9 +67,10 @@ const fadeInImages = (() => {
     for (const slider of sliders) {
         sliderObserver.observe(slider);
     }
-})();
+}
 
-const formValidation = (() => {
+{
+    // Form Validation
     const form = document.forms.contact;
     const nameInput = form.elements.name;
     const emailInput = form.elements.email;
@@ -107,11 +110,12 @@ const formValidation = (() => {
     emailInput.addEventListener("blur", checkValidity);
     messageInput.addEventListener("blur", checkValidity);
     form.addEventListener("submit", finalValidity);
-})();
+}
 
-const copyrightYear = (() => {
+{
+    // Copyright year
     const yearSpan = document.querySelector(".copyright-year");
     const date = new Date().getFullYear();
 
     yearSpan.textContent = date;
-})();
+}

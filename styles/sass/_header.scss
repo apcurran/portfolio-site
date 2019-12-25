@@ -196,7 +196,7 @@
     &-title,
     &-projects {
         opacity: 0;
-        animation: float-up 1000ms var(--alt-ease) forwards;
+        animation: float-up 800ms var(--alt-ease) forwards;
     }
 
     &-logo { animation-delay: 300ms; }

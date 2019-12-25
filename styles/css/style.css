@@ -211,7 +211,7 @@ p + p {
 }
 .header-info-logo, .header-info-title, .header-info-projects {
   opacity: 0;
-  animation: float-up 1000ms var(--alt-ease) forwards;
+  animation: float-up 800ms var(--alt-ease) forwards;
 }
 .header-info-logo {
   animation-delay: 300ms;
@@ -303,7 +303,7 @@ p + p {
   will-change: transform;
   transform: translateY(100px);
   opacity: 0;
-  transition: transform 1250ms ease, opacity 1250ms ease;
+  transition: transform 800ms ease, opacity 800ms ease;
 }
 
 .slider2 {
