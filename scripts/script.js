@@ -11,6 +11,7 @@
     // Nav link highlighter
     const pageSections = document.querySelectorAll(".section");
     const navbarHeight = document.querySelector(".nav").clientHeight;
+    const floater = document.querySelector(".floater");
 
     const options = {
         root: null,
@@ -20,18 +21,22 @@
 
     function observerCb(entries, observer) {
         for (const entry of entries) {
+            const currentPanelData = entry.target.dataset.section;
+            const activeAnchor = document.querySelector(`[data-page=${currentPanelData}]`);
+
+            const coords = activeAnchor.getBoundingClientRect();
+            const directions = {
+                height: coords.height,
+                width: coords.width,
+                top: coords.top,
+                left: coords.left
+            }
+
             if (entry.isIntersecting) {
-                const currentPanelData = entry.target.dataset.section;
-                const currentlyActive = document.querySelector(".nav-list-main-item-link.active");
-                const shouldBeActive = document.querySelector(`.${currentPanelData}`);
-                
-                if (currentlyActive) {
-                    currentlyActive.classList.remove("active");
-                }
-    
-                if (shouldBeActive) {
-                    shouldBeActive.classList.add("active");
-                }
+                floater.style.setProperty("left", `${directions.left}px`);
+                floater.style.setProperty("top", `${directions.top}px`);
+                floater.style.setProperty("width", `${directions.width}px`);
+                floater.style.setProperty("height", `${directions.height}px`);
             }
 
         }
