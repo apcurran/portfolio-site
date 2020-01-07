@@ -78,6 +78,8 @@ p + p {
 .floater {
   position: absolute;
   z-index: -5;
+  top: 0;
+  left: 50%;
   background-color: #bee3f8;
   border-radius: 4px;
   transition: all 250ms ease-in-out;
