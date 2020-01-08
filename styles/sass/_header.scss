@@ -25,6 +25,7 @@
         color: #333;
         font-weight: 500;
         font-size: 1.025rem;
+        outline: none;
       }
     }
 
@@ -169,6 +170,7 @@
             letter-spacing: .06em;
             cursor: pointer;
             transition: box-shadow 150ms ease-in-out;
+            outline: none;
 
             &:hover {
                 box-shadow: var(--btn-glow);

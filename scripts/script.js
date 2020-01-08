@@ -19,7 +19,7 @@
         rootMargin: `-${navbarHeight}px 0px -60% 0px`
     };
 
-    function observerCb(entries, observer) {
+    function navHighlighter(entries, observer) {
         for (const entry of entries) {
             const currentPanelData = entry.target.dataset.section;
             const activeAnchor = document.querySelector(`[data-page=${currentPanelData}]`);
@@ -42,7 +42,7 @@
         }
     }
 
-    const observer = new IntersectionObserver(observerCb, options);
+    const observer = new IntersectionObserver(navHighlighter, options);
 
     for (const section of pageSections) {
         observer.observe(section);
