@@ -34,8 +34,6 @@
             }
 
             if (entry.isIntersecting) {
-                // debugger;
-
                 floater.style.setProperty("width", `${directions.width}px`);
                 floater.style.setProperty("height", `${directions.height}px`);
                 floater.style.setProperty("transform", `translateY(${directions.top}px)`);

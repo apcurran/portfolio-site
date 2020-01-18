@@ -84,6 +84,7 @@ p + p {
   background-color: #bee3f8;
   border-radius: 4px;
   transition: all 250ms ease-in-out;
+  transform-origin: 0 0;
   will-change: left, transform;
 }
 
