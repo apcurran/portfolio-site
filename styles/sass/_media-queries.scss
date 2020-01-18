@@ -58,9 +58,9 @@
     }
 
     // Eliminate delay on mobile scroll
-    .slider2 { transition-delay: 0; }
+    .slider2 { transition-delay: 0ms; }
 
-    .slider3 { transition-delay: 0; }
+    .slider3 { transition-delay: 0ms; }
 
     .nav-sub-menu-about::after {
         right: 0;

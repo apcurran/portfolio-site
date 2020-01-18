@@ -29,7 +29,8 @@
                 height: coords.height,
                 width: coords.width,
                 top: coords.top,
-                left: coords.left
+                left: coords.left,
+                right: coords.right
             }
 
             if (entry.isIntersecting) {
@@ -37,8 +38,9 @@
 
                 floater.style.setProperty("width", `${directions.width}px`);
                 floater.style.setProperty("height", `${directions.height}px`);
-                floater.style.setProperty("left", `${directions.left}px`);
                 floater.style.setProperty("transform", `translateY(${directions.top}px)`);
+                floater.style.setProperty("left", `${directions.left}px`);
+
             }
 
         }
