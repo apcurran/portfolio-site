@@ -33,10 +33,12 @@
             }
 
             if (entry.isIntersecting) {
+                // debugger;
+
                 floater.style.setProperty("width", `${directions.width}px`);
                 floater.style.setProperty("height", `${directions.height}px`);
                 floater.style.setProperty("left", `${directions.left}px`);
-                floater.style.setProperty("top", `${directions.top}px`);
+                floater.style.setProperty("transform", `translateY(${directions.top}px)`);
             }
 
         }
