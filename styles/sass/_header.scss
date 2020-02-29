@@ -34,18 +34,6 @@
     }
 }
 
-// Nav Highlighter
-.floater {
-    position: absolute;
-    z-index: -5;
-    top: 0;
-    left: 70%;
-    background-color: #bee3f8;
-    border-radius: 4px;
-    transition: all 180ms ease-in-out;
-    will-change: left, transform;
-}
-
 .nav-list-about {
     position: absolute;
     right: 0;

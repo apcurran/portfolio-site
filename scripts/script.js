@@ -8,53 +8,8 @@
 }
 
 {
-    // Nav link highlighter
-    const pageSections = document.querySelectorAll(".section");
-    const navbarHeight = document.querySelector(".nav").clientHeight;
-    const floater = document.querySelector(".floater");
-
-    const options = {
-        root: null,
-        threshold: 0,
-        rootMargin: `-${navbarHeight}px 0px -60% 0px`
-    };
-
-    function navHighlighter(entries, observer) {
-        for (const entry of entries) {
-            const currentPanelData = entry.target.dataset.section;
-            const activeAnchor = document.querySelector(`[data-page=${currentPanelData}]`);
-
-            const coords = activeAnchor.getBoundingClientRect();
-            const directions = {
-                height: coords.height,
-                width: coords.width,
-                top: coords.top,
-                left: coords.left,
-                right: coords.right
-            }
-
-            if (entry.isIntersecting) {
-                floater.style.setProperty("width", `${directions.width}px`);
-                floater.style.setProperty("height", `${directions.height}px`);
-                floater.style.setProperty("transform", `translateY(${directions.top}px)`);
-                floater.style.setProperty("left", `${directions.left}px`);
-
-            }
-
-        }
-    }
-
-    const observer = new IntersectionObserver(navHighlighter, options);
-
-    for (const section of pageSections) {
-        observer.observe(section);
-    }
-}
-
-{
     // Fade in images
     const sliders = document.querySelectorAll(".slider");
-
     const fadeOptions = {
         threshold: 0,
         rootMargin: "0px 0px -60px 0px"
@@ -88,6 +43,7 @@
         if (event.currentTarget.validity.valid) {
             const currentEl = event.currentTarget;
             const error = currentEl.nextElementSibling;
+
             error.textContent = "";
             error.classList.remove("error-active");
         }
