@@ -10,33 +10,28 @@
 {
     // Fade in images
     const sliders = document.querySelectorAll(".slider");
-    const fadeOptions = {
-        threshold: 0,
-        rootMargin: "0px 0px -60px 0px"
+    const options = {
+        threshold: 0.15,
     };
 
-    function observerCb(entries, observer) {
-        for (const entry of entries) {
+    function fadeUp(entries, observer) {
+        entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("appear");
                 observer.unobserve(entry.target);
             }
-        }
+        })
     }
 
-    const sliderObserver = new IntersectionObserver(observerCb, fadeOptions);
+    const sliderObserver = new IntersectionObserver(fadeUp, options);
 
-    for (const slider of sliders) {
-        sliderObserver.observe(slider);
-    }
+    sliders.forEach(slider => sliderObserver.observe(slider));
 }
 
 {
     // Form Validation
     const form = document.forms.contact;
-    const nameInput = form.elements.name;
-    const emailInput = form.elements.email;
-    const messageInput = form.elements.message;
+    const [nameInput, emailInput, messageInput] = form.elements;
     const allUserInputs = form.querySelectorAll(".contact-user-input");
 
     function checkValidity(event) {
