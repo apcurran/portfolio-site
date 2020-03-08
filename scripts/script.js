@@ -33,7 +33,8 @@
 {
     // Form Validation
     const form = document.forms.contact;
-    const [nameInput, emailInput, messageInput] = form.elements;
+    console.log(form.elements);
+    const [name, email, message] = form.elements;
     const allUserInputs = form.querySelectorAll(".contact-user-input");
 
     function checkValidity(event) {
@@ -52,9 +53,9 @@
                 event.preventDefault();
                 const error = input.nextElementSibling;
                 
-                if (input === nameInput) {
+                if (input === name) {
                     error.textContent = "Please enter your full name.";
-                } else if (input === emailInput) {
+                } else if (input === email) {
                     error.textContent = "Please enter a valid email address.";
                 } else {
                     error.textContent = "Please include a message before submitting.";
@@ -66,9 +67,9 @@
 
     }
 
-    nameInput.addEventListener("blur", checkValidity);
-    emailInput.addEventListener("blur", checkValidity);
-    messageInput.addEventListener("blur", checkValidity);
+    name.addEventListener("blur", checkValidity);
+    email.addEventListener("blur", checkValidity);
+    message.addEventListener("blur", checkValidity);
     form.addEventListener("submit", finalValidity);
 }
 
