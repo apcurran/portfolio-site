@@ -56,7 +56,7 @@
                     error.textContent = "Please enter your full name.";
                 } else if (input === emailInput) {
                     error.textContent = "Please enter a valid email address.";
-                } else if (input === messageInput) {
+                } else {
                     error.textContent = "Please include a message before submitting.";
                 }
 
