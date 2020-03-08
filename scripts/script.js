@@ -15,17 +15,19 @@
     };
 
     function fadeUp(entries, observer) {
-        entries.forEach(entry => {
+        for (const entry of entries) {
             if (entry.isIntersecting) {
                 entry.target.classList.add("appear");
                 observer.unobserve(entry.target);
             }
-        })
+        }
     }
 
     const sliderObserver = new IntersectionObserver(fadeUp, options);
 
-    sliders.forEach(slider => sliderObserver.observe(slider));
+    for (const slider of sliders) {
+        sliderObserver.observe(slider);
+    }
 }
 
 {
