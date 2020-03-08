@@ -33,7 +33,6 @@
 {
     // Form Validation
     const form = document.forms.contact;
-    console.log(form.elements);
     const [name, email, message] = form.elements;
     const allUserInputs = form.querySelectorAll(".contact-user-input");
 
