@@ -44,6 +44,11 @@ p + p {
   margin-top: 1.5rem;
 }
 
+::selection {
+  color: #000;
+  background-color: #C3DAFE;
+}
+
 .header {
   margin-top: 5.1875rem;
 }

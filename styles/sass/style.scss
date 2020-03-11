@@ -46,6 +46,11 @@ p + p {
     margin-top: 1.5rem;
 }
 
+::selection {
+    color: #000;
+    background-color: #C3DAFE;
+}
+
 @import "header";
 @import "about-me";
 @import "about-skills";
