@@ -48,9 +48,9 @@
     align-items: center;
     border-radius: 5px;
 
-    transform: translate3d(0, -30px, 0);
-    transition: opacity 350ms ease,
-                transform 350ms ease;
+    transform: translate3d(0, -20px, 0);
+    transition: opacity 300ms ease,
+                transform 300ms ease;
     opacity: 0;
     pointer-events: none;
 
@@ -110,7 +110,7 @@
         top: 50%;
         right: 10%;
         transform: translateY(-55%) rotate(0);
-        transition: transform 350ms ease;
+        transition: transform 300ms ease;
         width: 20px;
         height: 20px;
         position: absolute;
@@ -186,7 +186,7 @@
 @keyframes float-up {
     from {
         opacity: 0;
-        transform: translateY(60px);
+        transform: translateY(40px);
     }
 
     to {
@@ -200,10 +200,10 @@
     &-title,
     &-projects {
         opacity: 0;
-        animation: float-up 800ms var(--alt-ease) forwards;
+        animation: float-up 600ms var(--alt-ease) forwards;
     }
 
     &-logo { animation-delay: 300ms; }
-    &-title { animation-delay: 900ms; }
-    &-projects { animation-delay: 1500ms; }
+    &-title { animation-delay: 600ms; }
+    &-projects { animation-delay: 800ms; }
 }

@@ -1,17 +1,15 @@
 "use strict";
 
-{
-    window.onload = () => {
-        const aboutSubMenu = document.querySelector(".nav-list-about");
-        setTimeout(aboutSubMenu.classList.remove("hide"), 1000);
-    };
-}
+window.onload = () => {
+    const aboutSubMenu = document.querySelector(".nav-list-about");
+    setTimeout(aboutSubMenu.classList.remove("hide"), 1000);
+};
 
 {
     // Fade in images
     const sliders = document.querySelectorAll(".slider");
     const options = {
-        threshold: 0.15,
+        threshold: 0.3,
     };
 
     function fadeUp(entries, observer) {

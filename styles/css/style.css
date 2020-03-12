@@ -11,7 +11,7 @@
   --btn-glow: 0 0 20px rgba(65, 184, 131, .8);
   --sub-heading-fz: 2.025rem;
   --alt-ease: cubic-bezier(.38,.63,.62,.92);
-  --slide-delay: 400ms;
+  --slide-delay: 200ms;
 }
 
 html,
@@ -92,8 +92,8 @@ p + p {
   justify-content: space-around;
   align-items: center;
   border-radius: 5px;
-  transform: translate3d(0, -30px, 0);
-  transition: opacity 350ms ease, transform 350ms ease;
+  transform: translate3d(0, -20px, 0);
+  transition: opacity 300ms ease, transform 300ms ease;
   opacity: 0;
   pointer-events: none;
 }
@@ -144,7 +144,7 @@ p + p {
   top: 50%;
   right: 10%;
   transform: translateY(-55%) rotate(0);
-  transition: transform 350ms ease;
+  transition: transform 300ms ease;
   width: 20px;
   height: 20px;
   position: absolute;
@@ -209,7 +209,7 @@ p + p {
 @keyframes float-up {
   from {
     opacity: 0;
-    transform: translateY(60px);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
@@ -218,16 +218,16 @@ p + p {
 }
 .header-info-logo, .header-info-title, .header-info-projects {
   opacity: 0;
-  animation: float-up 800ms var(--alt-ease) forwards;
+  animation: float-up 600ms var(--alt-ease) forwards;
 }
 .header-info-logo {
   animation-delay: 300ms;
 }
 .header-info-title {
-  animation-delay: 900ms;
+  animation-delay: 600ms;
 }
 .header-info-projects {
-  animation-delay: 1500ms;
+  animation-delay: 800ms;
 }
 
 .about-me {
@@ -308,9 +308,9 @@ p + p {
 
 .slider {
   will-change: transform;
-  transform: translateY(100px);
+  transform: translateY(80px);
   opacity: 0;
-  transition: transform 800ms ease, opacity 800ms ease;
+  transition: transform 900ms ease, opacity 900ms ease;
 }
 
 .slider2 {

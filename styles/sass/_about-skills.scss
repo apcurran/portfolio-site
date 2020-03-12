@@ -55,10 +55,10 @@
 // Slide in images
 .slider {
     will-change: transform;
-    transform: translateY(100px);
+    transform: translateY(80px);
     opacity: 0;
-    transition: transform 800ms ease,
-                opacity 800ms ease;
+    transition: transform 900ms ease,
+                opacity 900ms ease;
 }
 
 .slider2 { transition-delay: var(--slide-delay); }
