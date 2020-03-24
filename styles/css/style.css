@@ -59,7 +59,6 @@ p + p {
   left: 0;
   z-index: 10;
   background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   width: 100%;
   padding: 1rem 2.5rem;
   display: flex;
@@ -81,6 +80,18 @@ p + p {
   position: relative;
 }
 
+.nav::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #1FA2FF;
+  /* fallback for old browsers */
+  background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);
+}
+
 .nav-list-about {
   position: absolute;
   right: 0;
@@ -96,6 +107,7 @@ p + p {
   transition: opacity 300ms ease, transform 300ms ease;
   opacity: 0;
   pointer-events: none;
+  z-index: 10;
 }
 .nav-list-about-item {
   width: 100%;

@@ -16,7 +16,6 @@ window.onload = () => {
         for (const entry of entries) {
             if (entry.isIntersecting) {
                 entry.target.classList.add("appear");
-                observer.unobserve(entry.target);
             }
         }
     }
