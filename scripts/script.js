@@ -1,9 +1,13 @@
 "use strict";
 
-window.onload = () => {
-    const aboutSubMenu = document.querySelector(".nav-list-about");
-    setTimeout(aboutSubMenu.classList.remove("hide"), 1000);
-};
+{
+    const nav = document.querySelector(".nav");
+    
+    nav.addEventListener("mouseenter", () => {
+        const aboutSubMenu = nav.querySelector(".nav-list-about");
+        aboutSubMenu.classList.remove("hide");
+    });
+}
 
 {
     // Fade in images
@@ -13,18 +17,16 @@ window.onload = () => {
     };
 
     function fadeUp(entries, observer) {
-        for (const entry of entries) {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("appear");
+        for (let i = 0; i < entries.length; i++) {
+            if (entries[i].isIntersecting) {
+                entries[i].target.classList.add("appear");
             }
         }
     }
 
     const sliderObserver = new IntersectionObserver(fadeUp, options);
-
-    for (const slider of sliders) {
-        sliderObserver.observe(slider);
-    }
+    
+    sliders.forEach(slider => sliderObserver.observe(slider));
 }
 
 {
