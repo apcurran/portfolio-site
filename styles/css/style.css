@@ -437,7 +437,7 @@ p + p {
 }
 .portfolio-card-icons-item-link {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
   padding: 0.75rem;
 }
 .portfolio-card-icons-item-link::before {
