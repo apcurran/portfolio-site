@@ -260,8 +260,12 @@
             </section>
         </section>
         <section class="contact section" id="contact" data-section="contact-link">
-            <form novalidate class="contact-form" name="contact" method="POST" data-netlify="true">
+            <form novalidate class="contact-form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
                 <h2 class="contact-form-title">Contact Me</h2>
+                <div class="hidden" aria-hidden="true">
+                    <label>Don't fill this out if you are human.</label>
+                    <input type="text" name="bot-field">
+                </div>
                 <div class="contact-form-field">
                     <label for="name" class="contact-form-label">Name</label>
                     <input type="text" class="contact-form-input contact-user-input" name="name" id="name">
