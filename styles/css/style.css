@@ -413,6 +413,7 @@ p + p {
 }
 .portfolio-card-img {
   width: 100%;
+  height: auto;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
