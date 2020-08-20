@@ -20,6 +20,7 @@
         for (let i = 0; i < entries.length; i++) {
             if (entries[i].isIntersecting) {
                 entries[i].target.classList.add("appear");
+                observer.unobserve(entries[i].target);
             }
         }
     }
