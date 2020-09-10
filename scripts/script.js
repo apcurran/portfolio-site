@@ -12,22 +12,33 @@
 {
     // Fade in images
     const sliders = document.querySelectorAll(".slider");
-    const options = {
-        threshold: 0.4,
-    };
 
-    function fadeUp(entries, observer) {
-        for (let i = 0; i < entries.length; i++) {
-            if (entries[i].isIntersecting) {
-                entries[i].target.classList.add("appear");
-                observer.unobserve(entries[i].target);
+    window.addEventListener("scroll", debounce(checkSlide, 20));
+
+    function checkSlide(event) {
+        for (let slider of sliders) {
+            // Half of img
+            const slideInAt = (window.scrollY + document.documentElement.clientHeight) - slider.offsetHeight / 2;
+            const isHalfShown = slideInAt > slider.offsetTop;
+
+            if (isHalfShown) {
+                slider.classList.add("appear");
             }
         }
     }
 
-    const sliderObserver = new IntersectionObserver(fadeUp, options);
-    
-    sliders.forEach(slider => sliderObserver.observe(slider));
+    function debounce(func, ms) {
+        let isCooldown = false;
+        
+        return function() {
+            if (isCooldown) return;
+            
+            func.apply(this, arguments);
+            isCooldown = true;
+            
+            setTimeout(() => isCooldown = false, ms);
+        }
+    }
 }
 
 {
