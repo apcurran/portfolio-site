@@ -29,7 +29,7 @@
     &-title {
         display: inline-block;
         padding-bottom: .25rem;
-        border-bottom: 1px solid hsl(0, 0%, 81%);
+        border-bottom: 1px solid hsl(213, 21%, 90%);
         margin-bottom: .75rem;
 
         font-size: 1.35rem;
@@ -54,7 +54,7 @@
 
 // Slide in images
 .slider {
-    will-change: transform;
+    will-change: transform, opacity;
     transform: translateY(45px);
     opacity: 0;
     transition: transform 1000ms cubic-bezier(.38,.79,.55,.99),
