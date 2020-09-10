@@ -13,7 +13,7 @@
     // Fade in images
     const sliders = document.querySelectorAll(".slider");
     const options = {
-        threshold: 0.3,
+        threshold: 0.4,
     };
 
     function fadeUp(entries, observer) {

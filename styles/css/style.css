@@ -320,9 +320,9 @@ p + p {
 
 .slider {
   will-change: transform;
-  transform: translateY(80px);
+  transform: translateY(45px);
   opacity: 0;
-  transition: transform 900ms ease, opacity 900ms ease;
+  transition: transform 800ms ease, opacity 800ms ease;
 }
 
 .slider2 {
