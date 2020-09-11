@@ -197,7 +197,7 @@
 @keyframes float-up {
     from {
         opacity: 0;
-        transform: translateY(40px);
+        transform: translateY(20px);
     }
 
     to {
@@ -214,7 +214,7 @@
         animation: float-up 600ms var(--alt-ease) forwards;
     }
 
-    &-logo { animation-delay: 300ms; }
-    &-title { animation-delay: 600ms; }
-    &-projects { animation-delay: 800ms; }
+    &-logo { animation-delay: 200ms; }
+    &-title { animation-delay: 400ms; }
+    &-projects { animation-delay: 600ms; }
 }

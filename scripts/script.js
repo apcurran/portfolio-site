@@ -16,15 +16,14 @@
     window.addEventListener("scroll", debounce(checkSlide, 20));
 
     function checkSlide(event) {
-        for (let slider of sliders) {
-            // Half of img
+        sliders.forEach(slider => {
             const slideInAt = (window.scrollY + document.documentElement.clientHeight) - slider.offsetHeight / 2;
             const isHalfShown = slideInAt > slider.offsetTop;
-
+    
             if (isHalfShown) {
                 slider.classList.add("appear");
             }
-        }
+        });
     }
 
     function debounce(func, ms) {

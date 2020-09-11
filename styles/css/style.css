@@ -221,7 +221,7 @@ p + p {
 @keyframes float-up {
   from {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -233,13 +233,13 @@ p + p {
   animation: float-up 600ms var(--alt-ease) forwards;
 }
 .header-info-logo {
-  animation-delay: 300ms;
+  animation-delay: 200ms;
 }
 .header-info-title {
-  animation-delay: 600ms;
+  animation-delay: 400ms;
 }
 .header-info-projects {
-  animation-delay: 800ms;
+  animation-delay: 600ms;
 }
 
 .about-me {
