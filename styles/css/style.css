@@ -94,6 +94,9 @@ p + p {
   font-size: 1.025rem;
   outline: none;
 }
+.nav-list-main-item-link:focus {
+  text-decoration: underline;
+}
 .nav-sub-menu {
   position: relative;
 }
