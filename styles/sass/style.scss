@@ -7,7 +7,7 @@
 
 :root {
     --bg-clr: #0b395b;
-    --light-green: #41B883;
+    --light-green: #68D391;
     --dark-grey: #0c1014;
     --btn-glow: 0 0 20px rgba(65, 184, 131, .8);
 
@@ -49,6 +49,21 @@ p + p {
 ::selection {
     color: #000;
     background-color: #C3DAFE;
+}
+
+.cta-btn {
+    padding: 1.15rem 2.05rem;
+    border: none;
+    border-radius: 500px;
+    background-color: var(--light-green);
+    color: var(--dark-grey);
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    cursor: pointer;
+    transition: box-shadow 100ms ease-in-out;
+    outline: none;
 }
 
 @import "header";
