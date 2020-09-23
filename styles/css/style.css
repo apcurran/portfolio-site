@@ -63,6 +63,9 @@ p + p {
   transition: box-shadow 100ms ease-in-out;
   outline: none;
 }
+.cta-btn:hover, .cta-btn:focus {
+  box-shadow: var(--btn-glow);
+}
 
 .header {
   margin-top: 5.1875rem;
@@ -206,9 +209,6 @@ p + p {
 }
 .header-info-projects {
   margin-top: 6rem;
-}
-.header-info-projects:hover {
-  box-shadow: var(--btn-glow);
 }
 .header::before {
   content: "";
@@ -523,9 +523,6 @@ p + p {
 .contact-form-submit-btn {
   align-self: flex-start;
   justify-self: center;
-}
-.contact-form-submit-btn:hover {
-  box-shadow: var(--btn-glow);
 }
 .contact-form-error {
   background-color: #C6F6D5;

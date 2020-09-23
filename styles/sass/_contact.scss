@@ -57,10 +57,6 @@
         &-submit-btn {
             align-self: flex-start;
             justify-self: center;
-
-            &:hover {
-                box-shadow: var(--btn-glow);
-            }
         }
 
         &-error {

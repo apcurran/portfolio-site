@@ -64,6 +64,11 @@ p + p {
     cursor: pointer;
     transition: box-shadow 100ms ease-in-out;
     outline: none;
+
+    &:hover,
+    &:focus {
+        box-shadow: var(--btn-glow);
+    }
 }
 
 @import "header";
