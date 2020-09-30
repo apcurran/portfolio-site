@@ -317,7 +317,7 @@ p + p {
 .about-skills-card-content-img {
   margin-right: 1.25rem;
   filter: grayscale(1);
-  transition: filter 160ms ease-in-out;
+  transition: filter 110ms ease-in-out;
 }
 
 .about-skills-card:hover .about-skills-card-content-img {

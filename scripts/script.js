@@ -13,7 +13,7 @@
     // Fade in images
     const sliders = document.querySelectorAll(".slider");
 
-    window.addEventListener("scroll", debounce(checkSlide, 20));
+    window.addEventListener("scroll", debounce(checkSlide, 15));
 
     function checkSlide(event) {
         sliders.forEach(slider => {
