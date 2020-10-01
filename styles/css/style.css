@@ -412,7 +412,7 @@ p + p {
 
 .portfolio-card {
   transform: translate3d(0, 0, 0);
-  transition: transform 350ms ease, box-shadow 350ms ease;
+  transition: transform 250ms ease, box-shadow 250ms ease;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
   background-color: #fff;
   border-radius: 4px;
@@ -450,21 +450,23 @@ p + p {
 }
 .portfolio-card-icons-item-link::before {
   opacity: 0;
+  transition: opacity 120ms ease-in-out, transform 120ms ease-in-out;
   pointer-events: none;
-  transition: opacity 150ms ease-in-out;
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translate(-50%, 110%);
+  transform: translate(-50%, 110%) scale(0.8);
   content: attr(data-tooltip);
   width: 100%;
   text-align: center;
   padding: 0.5rem;
   border-radius: 4px;
-  background-color: #999;
+  background-color: #32325d;
+  color: #fafcff;
 }
 .portfolio-card-icons-item-link:hover::before {
   opacity: 1;
+  transform: translate(-50%, 110%) scale(1);
   pointer-events: all;
 }
 
@@ -559,7 +561,7 @@ p + p {
   margin: 0 1rem;
   cursor: pointer;
   opacity: 0.65;
-  transition: opacity 180ms ease;
+  transition: opacity 150ms ease;
 }
 .footer-icons-link:hover {
   opacity: 1;
