@@ -523,7 +523,7 @@ h2 {
   color: #fff;
 }
 .contact-form-input:focus {
-  border-bottom: 2px solid #00a0a0;
+  border-bottom: 2px solid var(--light-green);
 }
 .contact-form-textarea {
   resize: none;
