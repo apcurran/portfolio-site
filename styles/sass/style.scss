@@ -8,7 +8,7 @@
 :root {
     --bg-clr: #0b395b;
     --light-green: #68D391;
-    --dark-grey: #0c1014;
+    --dark-grey: hsl(220, 26%, 10%);
     --btn-glow: 0 0 20px rgba(65, 184, 131, .8);
 
     --sub-heading-fz: 2.025rem;
@@ -49,6 +49,11 @@ p + p {
 ::selection {
     color: #000;
     background-color: #C3DAFE;
+}
+
+h1,
+h2 {
+    color: var(--dark-grey);
 }
 
 .cta-btn {

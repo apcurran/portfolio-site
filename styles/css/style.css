@@ -7,7 +7,7 @@
 :root {
   --bg-clr: #0b395b;
   --light-green: #68D391;
-  --dark-grey: #0c1014;
+  --dark-grey: hsl(220, 26%, 10%);
   --btn-glow: 0 0 20px rgba(65, 184, 131, .8);
   --sub-heading-fz: 2.025rem;
   --alt-ease: cubic-bezier(.38,.63,.62,.92);
@@ -47,6 +47,11 @@ p + p {
 ::selection {
   color: #000;
   background-color: #C3DAFE;
+}
+
+h1,
+h2 {
+  color: var(--dark-grey);
 }
 
 .cta-btn {
@@ -373,6 +378,9 @@ p + p {
 .about-education-grid-content {
   border-left: 4px solid #40a4f4;
   padding-left: 0.75rem;
+}
+.about-education-grid-content-title {
+  font-weight: 500;
 }
 .about-education-grid-content-subtitle {
   color: #627793;

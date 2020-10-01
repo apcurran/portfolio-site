@@ -30,6 +30,10 @@
         border-left: 4px solid #40a4f4;
         padding-left: .75rem;
 
+        &-title {
+            font-weight: 500;
+        }
+
         &-subtitle {
             color: hsl(214, 20%, 48%);
             font-weight: 400;
