@@ -16,14 +16,14 @@
     window.addEventListener("scroll", debounce(checkSlide, 15));
 
     function checkSlide(event) {
-        sliders.forEach(slider => {
-            const slideInAt = (window.scrollY + document.documentElement.clientHeight) - slider.offsetHeight / 2;
-            const isHalfShown = slideInAt > slider.offsetTop;
+        for (let i = 0; i < sliders.length; i++) {
+            const slideInAt = (window.scrollY + document.documentElement.clientHeight) - sliders[i].offsetHeight / 2;
+            const isHalfShown = slideInAt > sliders[i].offsetTop;
     
             if (isHalfShown) {
-                slider.classList.add("appear");
+                sliders[i].classList.add("appear");
             }
-        });
+        }
     }
 
     function debounce(func, ms) {
