@@ -1,3 +1,11 @@
+@media screen and (max-width: 95em) {
+    .about-me::before,
+    .about-me::after {
+        width: 0;
+        height: 0;
+    }
+}
+
 @media screen and (max-width: 47.5em) {
     .about-education-grid {
         grid-template-columns: 1fr;

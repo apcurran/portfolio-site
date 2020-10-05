@@ -6,6 +6,7 @@
 
 :root {
   --bg-clr: #0b395b;
+  --primary-txt-clr: #1a202c;
   --light-green: #68D391;
   --dark-grey: hsl(220, 26%, 10%);
   --btn-glow: 0 0 20px rgba(65, 184, 131, .8);
@@ -50,8 +51,9 @@ p + p {
 }
 
 h1,
-h2 {
-  color: var(--dark-grey);
+h2,
+h3 {
+  color: var(--primary-txt-clr);
 }
 
 .cta-btn {
@@ -254,10 +256,31 @@ h2 {
 }
 
 .about-me {
+  position: relative;
   width: 75ch;
   max-width: 90%;
   margin: 8rem auto 0 auto;
   padding: 6rem 0;
+}
+.about-me::before {
+  position: absolute;
+  content: "";
+  width: 12rem;
+  height: 12rem;
+  top: 0;
+  right: 0;
+  transform: translate(183%, 10%) rotate(-180deg);
+  background: url(../../assets/images/texture-triangle-blue.svg) no-repeat center center;
+}
+.about-me::after {
+  position: absolute;
+  content: "";
+  width: 12rem;
+  height: 12rem;
+  bottom: 0;
+  left: 0;
+  transform: translate(-183%, -10%);
+  background: url(../../assets/images/texture-triangle-blue.svg) no-repeat center center;
 }
 .about-me-title {
   text-align: center;
@@ -266,10 +289,11 @@ h2 {
 }
 .about-me-para {
   font-size: 1.1rem;
+  color: var(--primary-txt-clr);
 }
 
 .drop-para::first-letter {
-  color: var(--bg-clr);
+  color: var(--primary-txt-clr);
   font-size: 3.75rem;
   line-height: 3rem;
   float: left;
@@ -280,6 +304,7 @@ h2 {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.09em;
+  color: var(--primary-txt-clr);
 }
 
 .about-skills {
@@ -313,6 +338,7 @@ h2 {
   border-bottom: 1px solid #e0e5eb;
   margin-bottom: 0.75rem;
   font-size: 1.35rem;
+  color: var(--primary-txt-clr);
 }
 .about-skills-card-content {
   display: flex;
@@ -383,7 +409,7 @@ h2 {
   font-weight: 500;
 }
 .about-education-grid-content-subtitle {
-  color: #5a6d87;
+  color: #59667d;
   font-weight: 400;
 }
 .about-education-grid-content-desc {
@@ -577,11 +603,18 @@ h2 {
 .footer-name {
   margin-top: 1.5rem;
   text-align: center;
-  color: #a6a6a6;
+  color: #afbad0;
   font-weight: 400;
   font-size: 1rem;
 }
 
+@media screen and (max-width: 95em) {
+  .about-me::before,
+.about-me::after {
+    width: 0;
+    height: 0;
+  }
+}
 @media screen and (max-width: 47.5em) {
   .about-education-grid {
     grid-template-columns: 1fr;

@@ -7,6 +7,7 @@
 
 :root {
     --bg-clr: #0b395b;
+    --primary-txt-clr: #1a202c;
     --light-green: #68D391;
     --dark-grey: hsl(220, 26%, 10%);
     --btn-glow: 0 0 20px rgba(65, 184, 131, .8);
@@ -52,8 +53,9 @@ p + p {
 }
 
 h1,
-h2 {
-    color: var(--dark-grey);
+h2,
+h3 {
+    color: var(--primary-txt-clr);
 }
 
 .cta-btn {
