@@ -293,11 +293,12 @@ h3 {
 }
 
 .drop-para::first-letter {
-  color: var(--primary-txt-clr);
+  float: left;
+  margin-top: 0.26rem;
+  margin-right: 0.55rem;
+  color: #4299E1;
   font-size: 3.75rem;
   line-height: 3rem;
-  float: left;
-  margin-right: 0.55rem;
 }
 
 .drop-para-smallcaps {
