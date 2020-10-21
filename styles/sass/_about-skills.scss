@@ -20,10 +20,11 @@
 
 .about-skills-card {
     padding: 1.5rem 6rem;
+    border: 1px solid hsl(214, 32%, 90%);
     border-top: 5px solid #40a4f4;
     background-color: #fff;
     border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    // box-shadow: 0 3px 7px rgba(0, 0, 0, .18);
 
     &-title {
         display: inline-block;
@@ -42,6 +43,7 @@
 
         &-img {
             margin-right: 1.25rem;
+            will-change: filter;
             filter: grayscale(1);
             transition: filter 110ms ease-in-out;
         }
@@ -55,7 +57,7 @@
 // Slide in images
 .slider {
     will-change: transform, opacity;
-    transform: translateY(45px);
+    transform: translateY(40px);
     opacity: 0;
     transition: transform 800ms cubic-bezier(.39,.58,.57,1),
                 opacity 800ms cubic-bezier(.39,.58,.57,1);
