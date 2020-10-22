@@ -58,21 +58,36 @@ h3 {
 }
 
 .cta-btn {
+  position: relative;
+  z-index: 10;
   padding: 1.15rem 2.05rem;
   border: none;
   border-radius: 500px;
   background-color: var(--light-green);
   color: var(--dark-green);
-  font-size: 1.05rem;
+  font-size: 1.125rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   cursor: pointer;
-  transition: box-shadow 100ms ease-in-out;
   outline: none;
 }
-.cta-btn:hover, .cta-btn:focus {
+.cta-btn::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 500px;
   box-shadow: var(--btn-glow);
+  will-change: opacity;
+  transition: opacity 150ms ease-in-out;
+  opacity: 0;
+}
+.cta-btn:hover::after, .cta-btn:focus::after {
+  opacity: 1;
 }
 
 .header {
