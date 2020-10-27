@@ -62,9 +62,9 @@
                 event.preventDefault();
                 const error = input.nextElementSibling;
                 
-                if (input === name) {
+                if (input.name === "name") {
                     error.textContent = "Please enter your full name.";
-                } else if (input === email) {
+                } else if (input.name === "email") {
                     error.textContent = "Please enter a valid email address.";
                 } else {
                     error.textContent = "Please include a message before submitting.";
