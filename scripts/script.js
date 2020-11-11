@@ -16,8 +16,10 @@
     window.addEventListener("scroll", debounce(checkSlide, 15));
 
     function checkSlide() {
+        // Calculate once before loop, then re-use within loop
+        const slideInAt = (window.scrollY + window.innerHeight) - sliders[0].offsetHeight / 2;
+        
         for (let i = 0; i < sliders.length; i++) {
-            const slideInAt = (window.scrollY + window.innerHeight) - sliders[i].offsetHeight / 2;
             const isHalfShown = slideInAt > sliders[i].offsetTop;
     
             if (isHalfShown) {
