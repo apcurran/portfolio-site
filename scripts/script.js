@@ -15,9 +15,20 @@
 
     window.addEventListener("scroll", debounce(checkSlide, 15));
 
+    let windowHeight = window.innerHeight;
+    let halfSliderHeight = sliders[0].offsetHeight / 2;
+
+    function recacheSliderVars() {
+        // Re-cache above vars if user has resized the window.
+        windowHeight = window.innerHeight;
+        halfSliderHeight = sliders[0].offsetHeight / 2;
+    }
+
+    window.onresize = recacheSliderVars; // Only execute on resize event.
+
     function checkSlide() {
         // Calculate once before loop, then re-use within loop
-        const slideInAt = (window.scrollY + window.innerHeight) - sliders[0].offsetHeight / 2;
+        const slideInAt = (window.scrollY + windowHeight) - halfSliderHeight;
         
         for (let i = 0; i < sliders.length; i++) {
             const isHalfShown = slideInAt > sliders[i].offsetTop;
