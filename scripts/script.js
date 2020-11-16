@@ -31,9 +31,8 @@
         const slideInAt = (window.scrollY + windowHeight) - halfSliderHeight;
         
         for (let i = 0; i < sliders.length; i++) {
-            const isHalfShown = slideInAt > sliders[i].offsetTop;
-    
-            if (isHalfShown) {
+            // Is half the card showing?
+            if (slideInAt > sliders[i].offsetTop) {
                 sliders[i].classList.add("appear");
             }
         }
