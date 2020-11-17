@@ -56,10 +56,10 @@
 // Slide in images
 .slider {
     will-change: transform, opacity;
-    transform: translateY(40px);
+    transform: translateY(36px);
     opacity: 0;
-    transition: transform 800ms cubic-bezier(.39,.58,.57,1),
-                opacity 800ms cubic-bezier(.39,.58,.57,1);
+    transition: transform 800ms cubic-bezier(0, .54, .62, 1),
+                opacity   800ms cubic-bezier(0, .54, .62, 1);
 }
 
 .slider2 { transition-delay: var(--slide-delay); }
