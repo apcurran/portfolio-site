@@ -13,17 +13,17 @@
     // Fade in images
     const sliders = document.querySelectorAll(".slider");
 
-    window.addEventListener("scroll", debounce(checkSlide, 15));
-
+    
     let windowHeight = window.innerHeight;
     let halfSliderHeight = sliders[0].offsetHeight / 2;
-
+    
     function recacheSliderVars() {
         // Re-cache above vars if user has resized the window.
         windowHeight = window.innerHeight;
         halfSliderHeight = sliders[0].offsetHeight / 2;
     }
-
+    
+    window.addEventListener("scroll", () => requestAnimationFrame(checkSlide));
     window.onresize = recacheSliderVars; // Only execute on resize event.
 
     function checkSlide() {
@@ -35,19 +35,6 @@
             if (slideInAt > sliders[i].offsetTop) {
                 sliders[i].classList.add("appear");
             }
-        }
-    }
-
-    function debounce(func, ms) {
-        let isCooldown = false;
-        
-        return function() {
-            if (isCooldown) return;
-            
-            func.apply(this, arguments);
-            isCooldown = true;
-            
-            setTimeout(() => isCooldown = false, ms);
         }
     }
 }
