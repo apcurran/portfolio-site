@@ -52,7 +52,10 @@
         &-list {
             list-style: none;
             display: flex;
-            gap: .875rem;
+        }
+
+        &-item:not(:last-of-type) {
+            margin-right: 1rem;
         }
 
         &-item {
