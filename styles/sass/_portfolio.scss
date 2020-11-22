@@ -19,7 +19,7 @@
 }
 
 .portfolio-card {
-    transform: translate3d(0, 0, 0);
+    will-change: transform, box-shadow;
     transition: 
         transform 250ms ease,
         box-shadow 250ms ease;
@@ -35,8 +35,6 @@
     }
 
     &-content {
-        display: flex;
-        flex-direction: column;
         padding: 1rem 2.875rem;
     }
 
@@ -54,7 +52,7 @@
         &-list {
             list-style: none;
             display: flex;
-            gap: 1.35rem;
+            gap: .875rem;
         }
 
         &-item {

@@ -10,36 +10,6 @@
 }
 
 {
-    // Fade in images
-    const sliders = document.querySelectorAll(".slider");
-
-    
-    let windowHeight = window.innerHeight;
-    let halfSliderHeight = sliders[0].offsetHeight / 2;
-    
-    function recacheSliderVars() {
-        // Re-cache above vars if user has resized the window.
-        windowHeight = window.innerHeight;
-        halfSliderHeight = sliders[0].offsetHeight / 2;
-    }
-    
-    window.addEventListener("scroll", () => requestAnimationFrame(checkSlide));
-    window.onresize = recacheSliderVars; // Only execute on resize event.
-
-    function checkSlide() {
-        // Calculate once before loop, then re-use within loop
-        const slideInAt = (window.scrollY + windowHeight) - halfSliderHeight;
-        
-        for (let i = 0; i < sliders.length; i++) {
-            // Is half the card showing?
-            if (slideInAt > sliders[i].offsetTop) {
-                sliders[i].classList.add("appear");
-            }
-        }
-    }
-}
-
-{
     // Form Validation
     const form = document.forms.contact;
     const [name, email, message] = form.elements;

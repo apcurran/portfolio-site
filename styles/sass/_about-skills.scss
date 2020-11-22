@@ -20,8 +20,8 @@
 
 .about-skills-card {
     padding: 1.5rem 6rem;
-    border: 1px solid hsl(214, 32%, 90%);
     border-top: 5px solid #40a4f4;
+    box-shadow: 0 4px 12px hsla(0, 0%, 0%, .12);
     background-color: #fff;
     border-radius: 4px;
 
@@ -51,22 +51,4 @@
 
 .about-skills-card:hover .about-skills-card-content-img {
     filter: grayscale(0);
-}
-
-// Slide in images
-.slider {
-    will-change: transform, opacity;
-    transform: translateY(36px);
-    opacity: 0;
-    transition: transform 800ms cubic-bezier(0, .54, .62, 1),
-                opacity   800ms cubic-bezier(0, .54, .62, 1);
-}
-
-.slider2 { transition-delay: var(--slide-delay); }
-
-.slider3 { transition-delay: calc(var(--slide-delay) * 2); }
-
-.slider.appear {
-    transform: translateY(0);
-    opacity: 1;
 }
