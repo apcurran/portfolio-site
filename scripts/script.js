@@ -3,10 +3,12 @@
 {
     const nav = document.querySelector(".nav");
     
-    nav.addEventListener("mouseenter", () => {
+    function handleNav() {
         const aboutSubMenu = nav.querySelector(".nav-list-about");
         aboutSubMenu.classList.remove("hide");
-    });
+    }
+
+    nav.addEventListener("mouseenter", handleNav, { once: true });
 }
 
 {
