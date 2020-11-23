@@ -502,7 +502,6 @@ h3 {
 .portfolio-card-icons-item-link:hover::before {
   opacity: 1;
   transform: translate(-50%, 110%) scale(1);
-  pointer-events: all;
 }
 
 .portfolio-card:hover {
