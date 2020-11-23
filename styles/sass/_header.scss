@@ -54,9 +54,7 @@
     display: flex;
     list-style: none;
     background-color: #fff;
-    box-shadow:
-        0 3px 6px rgba(0, 0, 0, 0.1),
-        0 8px 17px rgba(0, 0, 0, .05);
+    box-shadow: 0 8px 18px hsla(210, 8%, 62%, 0.2);
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
