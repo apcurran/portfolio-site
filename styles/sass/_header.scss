@@ -6,7 +6,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: var(--z-foreground-menu);
 
     background: #fff;
     width: 100%;
@@ -67,7 +67,7 @@
                 transform 300ms ease;
     opacity: 0;
     pointer-events: none;
-    z-index: 10;
+    z-index: var(--z-foreground-menu);
 
     &-item {
         width: 100%;
@@ -172,7 +172,7 @@
     &::before {
         content: "";
         position: absolute;
-        z-index: -10;
+        z-index: var(--z-background);
         width: 100%;
         height: 100%;
         transform: skewY(-9deg);
