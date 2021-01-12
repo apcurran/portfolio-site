@@ -6,7 +6,7 @@
 
 :root {
   --bg-clr: #0b395b;
-  --primary-txt-clr: #1a202c;
+  --primary-txt-clr: #1E293B;
   --light-green: #6ee7b7;
   --dark-green: hsl(164, 86%, 14%);
   --dark-grey: hsl(220, 26%, 10%);
@@ -34,9 +34,13 @@ body {
   background: #EDF2F7;
 }
 
+a,
+p {
+  color: var(--primary-txt-clr);
+}
+
 a {
   text-decoration: none;
-  color: #000;
   cursor: pointer;
 }
 
@@ -114,7 +118,7 @@ h3 {
 .nav-list-main-item-link {
   display: inline-block;
   padding: 1rem 2.25rem;
-  color: #333;
+  color: var(--primary-txt-clr);
   font-weight: 400;
   font-size: 1.025rem;
   outline: none;
@@ -414,7 +418,7 @@ h3 {
   font-weight: 500;
 }
 .about-education-grid-content-subtitle {
-  color: #59667d;
+  color: #637288;
   font-weight: 400;
 }
 .about-education-grid-content-desc {

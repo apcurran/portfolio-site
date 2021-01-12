@@ -7,7 +7,7 @@
 
 :root {
     --bg-clr: #0b395b;
-    --primary-txt-clr: #1a202c;
+    --primary-txt-clr: #1E293B;
     --light-green: #6ee7b7;
     --dark-green: hsl(164, 86%, 14%);
     --dark-grey: hsl(220, 26%, 10%);
@@ -36,9 +36,13 @@ body {
     background: #EDF2F7;
 }
 
+a,
+p {
+    color: var(--primary-txt-clr);
+}
+
 a {
     text-decoration: none;
-    color: #000;
     cursor: pointer;
 }
 
