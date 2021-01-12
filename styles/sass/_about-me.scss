@@ -34,7 +34,7 @@
     }
 
     &-para {
-        font-size: 1.1rem;
+        font-size: 1.125rem;
         color: var(--primary-txt-clr);
     }
     
@@ -42,7 +42,7 @@
 
 .drop-para::first-letter {
     float: left;
-    margin-top: .26rem;
+    margin-top: .25rem;
     margin-right: .55rem;
     color: #4299E1;
     font-size: 3.75rem;
@@ -50,7 +50,7 @@
 }
 
 .drop-para-smallcaps {
-    font-size: 1rem;
+    font-size: 1.0625rem;
     text-transform: uppercase;
     letter-spacing: .09em;
     color: var(--primary-txt-clr);

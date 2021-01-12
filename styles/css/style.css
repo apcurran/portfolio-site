@@ -7,10 +7,10 @@
 :root {
   --bg-clr: #0b395b;
   --primary-txt-clr: #1a202c;
-  --light-green: #68d391;
-  --dark-green: hsl(144, 93%, 5%);
+  --light-green: #6ee7b7;
+  --dark-green: hsl(164, 86%, 14%);
   --dark-grey: hsl(220, 26%, 10%);
-  --btn-glow: 0 0 20px rgba(65, 184, 131, .8);
+  --btn-glow: 0 0 20px rgba(110, 231, 183, .975);
   --sub-heading-fz: 2.025rem;
   --alt-ease: cubic-bezier(.38,.63,.62,.92);
   --z-foreground-cta: 10;
@@ -261,6 +261,7 @@ h3 {
 }
 .header-info-logo, .header-info-title, .header-info-projects {
   opacity: 0;
+  will-change: opacity, transform;
   animation: float-up 600ms var(--alt-ease) forwards;
 }
 .header-info-logo {
@@ -306,13 +307,13 @@ h3 {
   font-size: var(--sub-heading-fz);
 }
 .about-me-para {
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   color: var(--primary-txt-clr);
 }
 
 .drop-para::first-letter {
   float: left;
-  margin-top: 0.26rem;
+  margin-top: 0.25rem;
   margin-right: 0.55rem;
   color: #4299E1;
   font-size: 3.75rem;
@@ -320,7 +321,7 @@ h3 {
 }
 
 .drop-para-smallcaps {
-  font-size: 1rem;
+  font-size: 1.0625rem;
   text-transform: uppercase;
   letter-spacing: 0.09em;
   color: var(--primary-txt-clr);

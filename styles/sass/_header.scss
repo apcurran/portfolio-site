@@ -193,6 +193,7 @@
     &-title,
     &-projects {
         opacity: 0;
+        will-change: opacity, transform;
         animation: float-up 600ms var(--alt-ease) forwards;
     }
 
