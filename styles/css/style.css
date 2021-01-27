@@ -115,19 +115,28 @@ h3 {
   display: flex;
   list-style: none;
 }
-.nav-list-main-item-link {
+.nav-list-main-item-link,
+.nav-list-main .nav-sub-menu__title {
   display: inline-block;
   padding: 1rem 2.25rem;
   color: var(--primary-txt-clr);
   font-weight: 400;
-  font-size: 1.025rem;
+  font-size: 1.0625rem;
   outline: none;
 }
-.nav-list-main-item-link:focus {
+.nav-list-main-item-link:focus,
+.nav-list-main .nav-sub-menu__title:focus {
   text-decoration: underline;
 }
 .nav-sub-menu {
   position: relative;
+}
+.nav-sub-menu__title {
+  background: none;
+  border: none;
+}
+.nav-sub-menu__title:focus {
+  text-decoration: underline;
 }
 
 .nav::after {
@@ -189,18 +198,16 @@ h3 {
   transform: translate3d(0, 0, 0);
 }
 
-.nav-sub-menu:hover .nav-sub-menu-about::after {
-  transform: translateY(-45%) rotate(-180deg);
-}
-
 .hide {
   visibility: hidden;
   display: none;
 }
 
+.nav-sub-menu__title,
 .nav-sub-menu-about {
   position: relative;
 }
+.nav-sub-menu__title::after,
 .nav-sub-menu-about::after {
   content: "";
   top: 50%;
@@ -212,6 +219,10 @@ h3 {
   position: absolute;
   background-image: url(../../assets/images/icons/icon-cheveron-down.svg);
   background-repeat: no-repeat;
+}
+
+.nav-sub-menu:hover .nav-sub-menu__title::after {
+  transform: translateY(-45%) rotate(-180deg);
 }
 
 .nav-list-main-item-link {

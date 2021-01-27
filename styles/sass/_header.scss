@@ -18,12 +18,13 @@
       display: flex;
       list-style: none;
 
-      &-item-link {
+      &-item-link,
+      .nav-sub-menu__title {
         display: inline-block;
         padding: 1rem 2.25rem;
         color: var(--primary-txt-clr);
         font-weight: 400;
-        font-size: 1.025rem;
+        font-size: 1.0625rem;
         outline: none;
 
         &:focus {
@@ -34,6 +35,16 @@
 
     &-sub-menu {
         position: relative;
+    }
+
+    // Dropdown btn
+    &-sub-menu__title {
+        background: none;
+        border: none;
+
+        &:focus {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -103,19 +114,16 @@
     transform: translate3d(0, 0, 0);
 }
 
-// Animate chevron
-.nav-sub-menu:hover .nav-sub-menu-about::after {
-    transform: translateY(-45%) rotate(-180deg);
-}
-
 .hide {
     visibility: hidden;
     display: none;
 }
 
+// Dropdown Menu Chevron
+.nav-sub-menu__title,
 .nav-sub-menu-about {
     position: relative;
-
+    
     &::after {
         content: "";
         top: 50%;
@@ -128,6 +136,11 @@
         background-image: url(../../assets/images/icons/icon-cheveron-down.svg);
         background-repeat: no-repeat;
     }
+}
+
+// Animate chevron
+.nav-sub-menu:hover .nav-sub-menu__title::after {
+    transform: translateY(-45%) rotate(-180deg);
 }
 
 // Section scroll highlight link styling
