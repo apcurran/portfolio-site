@@ -192,7 +192,8 @@ h3 {
   color: #111;
 }
 
-.nav-sub-menu:hover .nav-list-about {
+.nav-sub-menu:hover .nav-list-about,
+.nav-sub-menu:focus-within .nav-list-about {
   opacity: 1;
   pointer-events: all;
   transform: translate3d(0, 0, 0);
@@ -203,12 +204,10 @@ h3 {
   display: none;
 }
 
-.nav-sub-menu__title,
-.nav-sub-menu-about {
+.nav-sub-menu__title {
   position: relative;
 }
-.nav-sub-menu__title::after,
-.nav-sub-menu-about::after {
+.nav-sub-menu__title::after {
   content: "";
   top: 50%;
   right: 10%;
