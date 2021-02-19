@@ -1,10 +1,4 @@
 // Global styles
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --bg-clr: #0b395b;
     --primary-txt-clr: #1E293B;
@@ -18,14 +12,6 @@
     --z-foreground-cta: 10;
     --z-foreground-menu: 10;
     --z-background: -10;
-}
-
-html,
-button,
-::before,
-::after {
-    font-family: 'Work Sans', sans-serif;
-    letter-spacing: .02em;
 }
 
 html {

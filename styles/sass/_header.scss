@@ -126,8 +126,8 @@
     
     &::after {
         content: "";
-        top: 50%;
-        right: 10%;
+        top: 52%;
+        right: .25rem;
         transform: translateY(-55%) rotate(0);
         transition: transform 300ms ease;
         width: 20px;
