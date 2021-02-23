@@ -136,7 +136,14 @@
             <section class="portfolio-cards">
                 <article class="portfolio-card">
                     <picture>
-                        <source type="image/avif" srcset="./assets/images/thumbnails/avif/art-zen-about.avif">
+                        <source
+                            type="image/avif"
+                            sizes="(max-width: 32em) 100vw, 25vw"
+                            srcset="
+                                ./assets/images/thumbnails/avif/art-zen-about.avif 1000w,
+                                ./assets/images/thumbnails/avif/art-zen-about-sm.avif 500w
+                            "
+                        >
                         <source type="image/webp" srcset="./assets/images/thumbnails/webp/art-zen-about.webp">
                         <img class="portfolio-card-img" width="352" height="179" decoding="async" src="./assets/images/thumbnails/art-zen-about.png" alt="Home Realty app page showing information on a specific house.">
                     </picture>
@@ -163,7 +170,14 @@
                 </article>
                 <article class="portfolio-card">
                     <picture>
-                        <source type="image/avif" srcset="./assets/images/thumbnails/avif/billow-thumbnail.avif">
+                        <source
+                            type="image/avif"
+                            sizes="(max-width: 32em) 100vw, 25vw"
+                            srcset="
+                                ./assets/images/thumbnails/avif/billow-thumbnail.avif 1000w,
+                                ./assets/images/thumbnails/avif/billow-thumbnail-sm.avif 500w
+                            "
+                        >
                         <source type="image/webp" srcset="./assets/images/thumbnails/webp/billow-thumbnail.webp">
                         <img class="portfolio-card-img" width="352" height="179" decoding="async" src="./assets/images/thumbnails/billow-thumbnail.png" alt="Home Realty app page showing information on a specific house.">
                     </picture>
@@ -190,7 +204,14 @@
                 </article>
                 <article class="portfolio-card">
                     <picture>
-                        <source type="image/avif" srcset="./assets/images/thumbnails/avif/heroes-for-sale-thumbnail.avif">
+                        <source
+                            type="image/avif"
+                            sizes="(max-width: 32em) 100vw, 25vw"
+                            srcset="
+                                ./assets/images/thumbnails/avif/heroes-for-sale-thumbnail.avif 1000w,
+                                ./assets/images/thumbnails/avif/heroes-for-sale-thumbnail-sm.avif 500w
+                            "
+                        >
                         <source type="image/webp" srcset="./assets/images/thumbnails/webp/heroes-for-sale-thumbnail.webp">
                         <img class="portfolio-card-img" width="352" height="179" decoding="async" src="./assets/images/thumbnails/heroes-for-sale-thumbnail.png" alt="Home page with games displayed in a grid layout.">
                     </picture>
@@ -217,6 +238,14 @@
                 </article>
                 <article class="portfolio-card">
                     <picture>
+                        <source
+                            type="image/avif"
+                            sizes="(max-width: 32em) 100vw, 25vw"
+                            srcset="
+                                ./assets/images/thumbnails/avif/barber-about-thumbnail.avif 1000w,
+                                ./assets/images/thumbnails/avif/barber-about-thumbnail-sm.avif 500w
+                            "
+                        >
                         <source type="image/avif" srcset="./assets/images/thumbnails/avif/barber-about-thumbnail.avif">
                         <source type="image/webp" srcset="./assets/images/thumbnails/webp/barber-about-thumbnail.webp">
                         <img class="portfolio-card-img" width="352" height="179" decoding="async" src="./assets/images/thumbnails/barber-about-thumbnail.png" alt="Barber Shop About page with haircutting tools and shop hours.">
@@ -244,6 +273,14 @@
                 </article>
                 <article class="portfolio-card">
                     <picture>
+                        <source
+                            type="image/avif"
+                            sizes="(max-width: 32em) 100vw, 25vw"
+                            srcset="
+                                ./assets/images/thumbnails/avif/markdown-blog-thumbnail.avif 1000w,
+                                ./assets/images/thumbnails/avif/markdown-blog-thumbnail-sm.avif 500w
+                            "
+                        >
                         <source type="image/avif" srcset="./assets/images/thumbnails/avif/markdown-blog-thumbnail.avif">
                         <source type="image/webp" srcset="./assets/images/thumbnails/webp/markdown-blog-thumbnail.webp">
                         <img class="portfolio-card-img" width="352" height="179" decoding="async" src="./assets/images/thumbnails/markdown-blog-thumbnail.png" alt="Pirate blog article">
@@ -263,33 +300,6 @@
                             </li>
                             <li class="portfolio-card-icons-item">
                                 <a href="https://alexcurran-blog.herokuapp.com/" class="portfolio-card-icons-item-link" aria-label="Website" data-tooltip="View Site" target="_blank" rel="noopener">
-                                    <img src="./assets/images/icons/icon-external-link.svg" alt="Website external link icon" class="portfolio-card-icons-item-img" width="24" height="24">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="portfolio-card">
-                    <picture>
-                        <source type="image/avif" srcset="./assets/images/thumbnails/avif/record-label-thumbnail.avif">
-                        <source type="image/webp" srcset="./assets/images/thumbnails/webp/record-label-thumbnail.webp">
-                        <img class="portfolio-card-img" width="352" height="179" decoding="async" src="./assets/images/thumbnails/record-label-thumbnail.png" alt="Layout of information on a record label site.">
-                    </picture>
-                    <div class="portfolio-card-content">
-                        <h2 class="portfolio-card-title">Boss Record Label</h2>
-                        <ul class="portfolio-card-icons-list">
-                            <li class="portfolio-card-icons-item">
-                                <a href="./assets/video/record-label-demo.webm" class="portfolio-card-icons-item-link" aria-label="Video" data-tooltip="View Demo" target="_blank" rel="noopener">
-                                    <img src="./assets/images/icons/icon-video.svg" alt="Video icon" class="portfolio-card-icons-item-img" width="24" height="24">
-                                </a>
-                            </li>
-                            <li class="portfolio-card-icons-item">
-                                <a href="https://github.com/apcurran/record-label" class="portfolio-card-icons-item-link" aria-label="Code" data-tooltip="View Code" target="_blank" rel="noopener">
-                                    <img src="./assets/images/icons/icon-code.svg" alt="Code icon" class="portfolio-card-icons-item-img" width="24" height="24">
-                                </a>
-                            </li>
-                            <li class="portfolio-card-icons-item">
-                                <a href="https://apcurran.github.io/record-label/" class="portfolio-card-icons-item-link" aria-label="Website" data-tooltip="View Site" target="_blank" rel="noopener">
                                     <img src="./assets/images/icons/icon-external-link.svg" alt="Website external link icon" class="portfolio-card-icons-item-img" width="24" height="24">
                                 </a>
                             </li>
