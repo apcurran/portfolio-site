@@ -49,6 +49,14 @@ h3 {
   color: var(--primary-txt-clr);
 }
 
+.content-heading {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--light-green);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+}
+
 .cta-btn {
   position: relative;
   z-index: var(--z-foreground-cta);
