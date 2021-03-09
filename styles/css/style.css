@@ -467,7 +467,7 @@ h3 {
 }
 .portfolio-card:hover {
   transform: translate3d(0, -5px, 0);
-  filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.17));
+  filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.1725));
 }
 .portfolio-card-img {
   width: 100%;
