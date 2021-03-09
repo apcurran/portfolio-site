@@ -23,7 +23,7 @@
     transition: 
         transform 250ms ease,
         box-shadow 250ms ease;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, .3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .22);
     background-color: #fff;
     border-radius: 4px;
 
@@ -101,5 +101,5 @@
 
 .portfolio-card:hover {
     transform: translate3d(0, -5px, 0);
-    box-shadow: 0 12px 22px rgba(0, 0, 0, .2);
+    box-shadow: 0 12px 22px rgba(0, 0, 0, .175);
 }
