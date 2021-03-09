@@ -461,17 +461,14 @@ h3 {
 .portfolio-card {
   will-change: transform, box-shadow;
   transition: transform 250ms ease, box-shadow 250ms ease;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
   background-color: #fff;
   border-radius: 4px;
 }
-<<<<<<< HEAD
 .portfolio-card:hover {
   transform: translate3d(0, -5px, 0);
-  filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.1725));
+  box-shadow: 0 13px 22px rgba(0, 0, 0, 0.1725);
 }
-=======
->>>>>>> parent of fc60482... Adjusted .portfolio-card hover effect and shadow from box-shadow property to filter: drop-shadow property, also adjusted values slightly lighter
 .portfolio-card-img {
   width: 100%;
   height: auto;
@@ -522,11 +519,6 @@ h3 {
 .portfolio-card-icons-item-link:hover::before {
   opacity: 1;
   transform: translate(-50%, 110%) scale(1);
-}
-
-.portfolio-card:hover {
-  transform: translate3d(0, -5px, 0);
-  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.2);
 }
 
 .contact {
