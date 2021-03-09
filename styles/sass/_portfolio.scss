@@ -19,13 +19,20 @@
 }
 
 .portfolio-card {
-    will-change: transform, box-shadow;
+    will-change: transform, filter;
     transition: 
         transform 250ms ease,
-        box-shadow 250ms ease;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, .3);
+        filter 250ms ease;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, .22));
+
     background-color: #fff;
     border-radius: 4px;
+
+    // Card hover shadow effect
+    &:hover {
+        transform: translate3d(0, -5px, 0);
+        filter: drop-shadow(0 12px 20px rgba(0, 0, 0, .17));
+    }
 
     &-img {
         width: 100%;
@@ -92,14 +99,9 @@
                     transform: translate(-50%, 110%) scale(1);
                 }
                 // End Tooltip
-
+                
             }
         }
     }
 
-}
-
-.portfolio-card:hover {
-    transform: translate3d(0, -5px, 0);
-    box-shadow: 0 12px 22px rgba(0, 0, 0, .2);
 }
