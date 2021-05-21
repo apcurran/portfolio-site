@@ -268,19 +268,16 @@ h3 {
     transform: translateY(0);
   }
 }
-.header-info-logo, .header-info-title, .header-info-projects {
+.header-info-title, .header-info-projects {
   opacity: 0;
   will-change: opacity, transform;
   animation: float-up 600ms var(--alt-ease) forwards;
 }
-.header-info-logo {
+.header-info-title {
   animation-delay: 200ms;
 }
-.header-info-title {
-  animation-delay: 400ms;
-}
 .header-info-projects {
-  animation-delay: 600ms;
+  animation-delay: 400ms;
 }
 
 .about-me {

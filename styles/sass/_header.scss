@@ -203,7 +203,6 @@
 }
 
 .header-info {
-    &-logo,
     &-title,
     &-projects {
         opacity: 0;
@@ -211,7 +210,6 @@
         animation: float-up 600ms var(--alt-ease) forwards;
     }
 
-    &-logo { animation-delay: 200ms; }
-    &-title { animation-delay: 400ms; }
-    &-projects { animation-delay: 600ms; }
+    &-title { animation-delay: 200ms; }
+    &-projects { animation-delay: 400ms; }
 }
