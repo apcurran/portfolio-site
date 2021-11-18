@@ -26,10 +26,10 @@ function checkValidity(event) {
 }
 
 function finalValidity(event) {
-    event.preventDefault();
-
     allUserInputs.forEach((input) => {
         if (!input.validity.valid || input.value === "") {
+            event.preventDefault();
+            
             const error = input.nextElementSibling;
             
             if (input.name === "name") {
