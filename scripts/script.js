@@ -25,16 +25,17 @@ function checkValidity(event) {
 }
 
 function finalValidity(event) {
-    allUserInputs.forEach(input => {
+    event.preventDefault();
+
+    allUserInputs.forEach((input) => {
         if (!input.validity.valid || input.value === "") {
-            event.preventDefault();
             const error = input.nextElementSibling;
             
             if (input.name === "name") {
                 error.textContent = "Please enter your full name.";
             } else if (input.name === "email") {
                 error.textContent = "Please enter a valid email address.";
-            } else {
+            } else if (input.name === "message") {
                 error.textContent = "Please include a message before submitting.";
             }
 
