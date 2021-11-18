@@ -16,7 +16,7 @@ const [, username, email, message] = form.elements;
 const allUserInputs = form.querySelectorAll(".contact-user-input");
 
 function checkValidity(event) {
-    if (event.currentTarget.validity.valid) {
+    if (event.currentTarget.validity.valid && event.currentTarget.value !== "") {
         const currentEl = event.currentTarget;
         const error = currentEl.nextElementSibling;
 
@@ -29,7 +29,7 @@ function finalValidity(event) {
     allUserInputs.forEach((input) => {
         if (!input.validity.valid || input.value === "") {
             event.preventDefault();
-            
+
             const error = input.nextElementSibling;
             
             if (input.name === "name") {
