@@ -1,15 +1,13 @@
 "use strict";
 
-{
-    const nav = document.querySelector(".nav");
-    
-    function handleNav() {
-        const aboutSubMenu = nav.querySelector(".nav-list-about");
-        aboutSubMenu.classList.remove("hide");
-    }
+const nav = document.querySelector(".nav");
 
-    nav.addEventListener("mouseenter", handleNav, { once: true });
+function handleNav() {
+    const aboutSubMenu = nav.querySelector(".nav-list-about");
+    aboutSubMenu.classList.remove("hide");
 }
+
+nav.addEventListener("mouseenter", handleNav, { once: true });
 
 {
     // Form Validation
@@ -53,10 +51,8 @@
     form.addEventListener("submit", finalValidity);
 }
 
-{
-    // Copyright year
-    const yearSpan = document.querySelector(".copyright-year");
-    const date = new Date().getFullYear();
+// Copyright year
+const yearSpan = document.querySelector(".copyright-year");
+const date = new Date().getFullYear();
 
-    yearSpan.textContent = date;
-}
+yearSpan.textContent = date;
