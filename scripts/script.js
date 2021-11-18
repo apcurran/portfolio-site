@@ -11,8 +11,9 @@ nav.addEventListener("mouseenter", handleNav, { once: true });
 
 // Form Validation
 const form = document.forms.contact;
-// Skip first elem on destructure, bot field added as index 0
-const [, username, email, message] = form.elements;
+const username = form.querySelector(".contact-input--username");
+const email = form.querySelector(".contact-input--email");
+const message = form.querySelector(".contact-input--message");
 const allUserInputs = form.querySelectorAll(".contact-user-input");
 
 function checkValidity(event) {
