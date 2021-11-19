@@ -48,11 +48,11 @@ function finalValidity(event) {
 }
 
 username.addEventListener("blur", checkValidity);
-username.addEventListener("keydown", checkValidity);
+username.addEventListener("keyup", checkValidity);
 email.addEventListener("blur", checkValidity);
-email.addEventListener("keydown", checkValidity);
+email.addEventListener("keyup", checkValidity);
 message.addEventListener("blur", checkValidity);
-message.addEventListener("keydown", checkValidity);
+message.addEventListener("keyup", checkValidity);
 form.addEventListener("submit", finalValidity);
 
 // Copyright year
