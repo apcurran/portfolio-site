@@ -1,4 +1,5 @@
 :root {
+  --primary-bg-clr: #edf2f7;
   --bg-clr: #0b395b;
   --primary-txt-clr: #1e293b;
   --light-green: #6ee7b7;
@@ -17,11 +18,11 @@ html {
 }
 
 body {
-  background: #EDF2F7;
+  background-color: var(--primary-bg-clr);
+  color: var(--primary-txt-clr);
 }
 
-a,
-p {
+a {
   color: var(--primary-txt-clr);
 }
 
@@ -39,8 +40,7 @@ p + p {
 }
 
 ::selection {
-  color: #000;
-  background-color: #C3DAFE;
+  background-color: #c3dafe;
 }
 
 h1,
@@ -184,7 +184,6 @@ h3 {
 .nav-list-about-link {
   display: block;
   padding: 1.5rem 3rem;
-  color: #111;
 }
 
 .nav-sub-menu:hover .nav-list-about,
@@ -314,7 +313,6 @@ h3 {
 }
 .about-me-para {
   font-size: 1.125rem;
-  color: var(--primary-txt-clr);
 }
 
 .drop-para::first-letter {
