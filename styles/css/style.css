@@ -22,11 +22,12 @@ body {
   color: var(--primary-txt-clr);
 }
 
-a {
-  color: var(--primary-txt-clr);
+img {
+  display: block;
 }
 
 a {
+  color: var(--primary-txt-clr);
   text-decoration: none;
   cursor: pointer;
 }
@@ -41,12 +42,6 @@ p + p {
 
 ::selection {
   background-color: #c3dafe;
-}
-
-h1,
-h2,
-h3 {
-  color: var(--primary-txt-clr);
 }
 
 .content-heading {
