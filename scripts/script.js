@@ -56,7 +56,7 @@ message.addEventListener("keyup", checkValidity);
 form.addEventListener("submit", finalValidity);
 
 // Copyright year
-const yearSpan = document.querySelector(".copyright-year");
+const yearSpan = document.getElementById("copyright-year");
 const date = new Date().getFullYear();
 
 yearSpan.textContent = date;
