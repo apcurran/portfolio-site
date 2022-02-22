@@ -1,13 +1,38 @@
 "use strict";
 
-const nav = document.querySelector(".nav");
+const navSubMenuBtn = document.querySelector(".nav-sub-menu__title");
+const navSubMenu = document.querySelector(".nav-list-about");
 
-function handleNav() {
-    const aboutSubMenu = nav.querySelector(".nav-list-about");
-    aboutSubMenu.classList.remove("hide");
+function handleNavMenuClick() {
+    if (!navSubMenu.classList.contains("nav-list-about--show")) {
+        openNavMenu();
+    } else {
+        closeNavMenu();
+    }
 }
 
-nav.addEventListener("mouseenter", handleNav, { once: true });
+function handleNavMenuOutsideClick(event) {
+    if (event.target === navSubMenuBtn) return;
+
+    const isOutside = !event.target.closest(".nav-list-about");
+
+    if (isOutside) closeNavMenu();
+}
+
+function openNavMenu() {
+    navSubMenu.classList.add("nav-list-about--show");
+    navSubMenuBtn.classList.add("nav-sub-menu__title--rotate");
+    navSubMenuBtn.ariaExpanded = "true";
+}
+
+function closeNavMenu() {
+    navSubMenu.classList.remove("nav-list-about--show");
+    navSubMenuBtn.classList.remove("nav-sub-menu__title--rotate");
+    navSubMenuBtn.ariaExpanded = "false";
+}
+
+navSubMenuBtn.addEventListener("click", handleNavMenuClick);
+document.addEventListener("click", handleNavMenuOutsideClick);
 
 // Form Validation
 const form = document.forms.contact;

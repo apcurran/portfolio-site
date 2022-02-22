@@ -113,6 +113,7 @@ p + p {
   font-weight: 400;
   font-size: 1.0625rem;
   outline: none;
+  cursor: pointer;
 }
 .nav-list-main-item-link:focus,
 .nav-list-main .nav-sub-menu__title:focus {
@@ -142,6 +143,7 @@ p + p {
 }
 
 .nav-list-about {
+  visibility: hidden;
   position: absolute;
   right: 0;
   display: flex;
@@ -155,7 +157,6 @@ p + p {
   transform: translate3d(0, -20px, 0);
   transition: opacity 300ms ease, transform 300ms ease;
   opacity: 0;
-  pointer-events: none;
   z-index: var(--z-foreground-menu);
 }
 .nav-list-about-item {
@@ -181,16 +182,10 @@ p + p {
   padding: 1.5rem 3rem;
 }
 
-.nav-sub-menu:hover .nav-list-about,
-.nav-sub-menu:focus-within .nav-list-about {
+.nav-list-about--show {
+  visibility: visible;
   opacity: 1;
-  pointer-events: all;
   transform: translate3d(0, 0, 0);
-}
-
-.hide {
-  visibility: hidden;
-  display: none;
 }
 
 .nav-sub-menu__title {
@@ -209,7 +204,7 @@ p + p {
   background-repeat: no-repeat;
 }
 
-.nav-sub-menu:hover .nav-sub-menu__title::after {
+.nav-sub-menu__title--rotate::after {
   transform: translateY(-45%) rotate(-180deg);
 }
 
