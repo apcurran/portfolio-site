@@ -82,6 +82,7 @@ form.addEventListener("submit", finalValidity);
 
 // Copyright year
 const yearSpan = document.getElementById("copyright-year");
-const date = new Date().getFullYear();
+const dateYear = new Date().getFullYear();
 
-yearSpan.textContent = date;
+yearSpan.textContent = dateYear;
+yearSpan.setAttribute("datetime", dateYear);
