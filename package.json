@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "[Link](https://currandev.com/)",
+  "main": "./scripts/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "sass --watch styles/sass:styles/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apcurran/portfolio-site.git"
+  },
+  "author": "Alex Curran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apcurran/portfolio-site/issues"
+  },
+  "homepage": "https://github.com/apcurran/portfolio-site#readme"
+}
