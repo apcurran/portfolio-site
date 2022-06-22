@@ -68,13 +68,13 @@
     display: flex;
     list-style: none;
     background-color: #fff;
-    box-shadow: 0 8px 18px hsla(210, 8%, 62%, 0.2);
+    box-shadow: 0 7px 17px hsla(210, 8%, 62%, 0.2);
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     border-radius: 5px;
-
-    transform: translate3d(0, -20px, 0);
+    will-change: transform;
+    transform: translateY(-20px);
     transition: opacity 300ms ease,
                 transform 300ms ease;
     opacity: 0;
@@ -112,7 +112,7 @@
 .nav-list-about--show {
     visibility: visible;
     opacity: 1;
-    transform: translate3d(0, 0, 0);
+    transform: translateY(0);
 }
 
 // Dropdown Menu Chevron
