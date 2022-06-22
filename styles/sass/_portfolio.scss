@@ -19,19 +19,9 @@
 }
 
 .portfolio-card {
-    will-change: transform, box-shadow;
-    transition: 
-        transform 250ms ease,
-        box-shadow 250ms ease;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .22);
     background-color: #fff;
     border-radius: 4px;
-
-    // Card shadow hover effect
-    &:hover {
-        transform: translate3d(0, -5px, 0);
-        box-shadow: 0 13px 22px rgba(0, 0, 0, .1725);
-    }
 
     &-img {
         width: 100%;
@@ -98,7 +88,6 @@
                     transform: translate(-50%, 110%) scale(1);
                 }
                 // End Tooltip
-
             }
         }
     }
