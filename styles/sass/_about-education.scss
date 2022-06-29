@@ -5,7 +5,6 @@
     &-title {
         margin-bottom: 2rem;
         text-align: center;
-        font-size: var(--sub-heading-fz);
     }
 }
 
@@ -38,16 +37,17 @@
 
         &-title {
             font-weight: 500;
+            font-size: var(--fz-lg);
         }
 
         &-subtitle {
             color: hsl(215, 16%, 46%);
             font-weight: 400;
+            font-size: var(--fz-sm);
         }
 
         &-desc {
             margin-top: .7rem;
-            font-size: 1rem;
         }
     }
 

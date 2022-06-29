@@ -13,9 +13,8 @@
     --z-foreground-menu: 10;
     --z-background: -10;
     
-    --sub-heading-fz: 2.025rem;
     --fz-xl: 2.25rem;
-    --fz-lg: 2rem;
+    --fz-lg: 1.375rem;
     --fz-md: 1.125rem;
     --fz-sm: 1rem;
     --fz-xs: .875rem;
@@ -53,6 +52,7 @@ p + p {
 }
 
 .content-heading {
+    font-size: var(--fz-xl);
     text-decoration: underline;
     text-decoration-style: wavy;
     text-decoration-color: var(--light-green);

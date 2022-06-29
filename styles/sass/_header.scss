@@ -25,7 +25,7 @@
         padding: 1rem 2rem;
         color: var(--primary-txt-clr);
         font-weight: 400;
-        font-size: 1.0625rem;
+        // font-size: 1.0625rem;
         outline: none;
         cursor: pointer;
 
@@ -57,7 +57,7 @@
     width: 100%;
     bottom: 0;
     left: 0;
-    background: #1FA2FF;  /* fallback for old browsers */
+    background: #1FA2FF; /* fallback for old browsers */
     background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);    
 }
 
@@ -204,6 +204,10 @@
         animation: float-up 600ms var(--alt-ease) forwards;
     }
 
-    &-title { animation-delay: 200ms; }
+    &-title {
+        font-size: var(--fz-lg);
+
+        animation-delay: 200ms;
+    }
     &-projects { animation-delay: 400ms; }
 }
