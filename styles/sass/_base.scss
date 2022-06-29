@@ -8,11 +8,17 @@
     --dark-grey: hsl(220, 26%, 10%);
     --btn-glow: 0 0 20px rgba(110, 231, 183, .975);
 
-    --sub-heading-fz: 2.025rem;
     --alt-ease: cubic-bezier(.38,.63,.62,.92);
     --z-foreground-cta: 10;
     --z-foreground-menu: 10;
     --z-background: -10;
+    
+    --sub-heading-fz: 2.025rem;
+    --fz-xl: 2.25rem;
+    --fz-lg: 2rem;
+    --fz-md: 1.125rem;
+    --fz-sm: 1rem;
+    --fz-xs: .875rem;
 }
 
 html {
@@ -62,7 +68,6 @@ p + p {
     border-radius: 500px;
     background-color: var(--light-green);
     color: var(--dark-green);
-    font-size: 1.125rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: .08em;
@@ -90,4 +95,14 @@ p + p {
     &:focus::after {
         opacity: 1;
     }
+}
+
+// typography
+a,
+p,
+button,
+label,
+input,
+textarea {
+    font-size: var(--fz-md);
 }
