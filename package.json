@@ -4,7 +4,6 @@
   "description": "[Link](https://currandev.com/)",
   "main": "./scripts/script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "watch:sass": "sass --watch styles/sass:styles/css"
   },
   "repository": {
