@@ -18,6 +18,8 @@
     --fz-md: 1.125rem;
     --fz-sm: 1rem;
     --fz-xs: .875rem;
+
+    --bold: 600;
 }
 
 html {
@@ -68,7 +70,7 @@ p + p {
     border-radius: 500px;
     background-color: var(--light-green);
     color: var(--dark-green);
-    font-weight: 600;
+    font-weight: var(--bold);
     text-transform: uppercase;
     letter-spacing: .08em;
     cursor: pointer;

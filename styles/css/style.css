@@ -15,6 +15,7 @@
   --fz-md: 1.125rem;
   --fz-sm: 1rem;
   --fz-xs: .875rem;
+  --bold: 600;
 }
 
 html {
@@ -65,7 +66,7 @@ p + p {
   border-radius: 500px;
   background-color: var(--light-green);
   color: var(--dark-green);
-  font-weight: 600;
+  font-weight: var(--bold);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   cursor: pointer;
@@ -413,7 +414,7 @@ textarea {
   padding-left: 0.75rem;
 }
 .about-education-grid-content-title {
-  font-weight: 500;
+  font-weight: var(--bold);
   font-size: var(--fz-lg);
 }
 .about-education-grid-content-subtitle {
@@ -534,7 +535,7 @@ textarea {
 .contact-form-label {
   color: #fff;
   margin-bottom: 0.9rem;
-  font-weight: 500;
+  font-weight: var(--bold);
 }
 .contact-form-input {
   padding: 0.5rem;
