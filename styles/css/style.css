@@ -419,7 +419,7 @@ textarea {
 }
 .about-education-grid-content-subtitle {
   color: #637288;
-  font-weight: 400;
+  font-weight: var(--bold);
   font-size: var(--fz-sm);
 }
 .about-education-grid-content-desc {
