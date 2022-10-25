@@ -420,7 +420,7 @@ textarea {
 .about-education-grid-content-subtitle {
   color: #637288;
   font-weight: var(--bold);
-  font-size: var(--fz-sm);
+  font-size: var(--fz-md);
 }
 .about-education-grid-content-desc {
   margin-top: 0.7rem;
@@ -681,24 +681,11 @@ textarea {
   }
 
   .contact-form-title {
-    font-size: 1.9rem;
     margin-bottom: 4rem;
   }
 
   .contact-form-field {
     margin: 1.5rem 0;
-  }
-
-  .contact-form-label {
-    font-size: 1rem;
-  }
-
-  .contact-form-submit-btn {
-    font-size: 1.1rem;
-  }
-
-  .footer-name {
-    font-size: 0.9rem;
   }
 }
 
