@@ -474,9 +474,7 @@ textarea {
 .portfolio-card-icons-list {
   list-style: none;
   display: flex;
-}
-.portfolio-card-icons-item:not(:last-of-type) {
-  margin-right: 1rem;
+  gap: 1.25rem;
 }
 .portfolio-card-icons-item {
   background-color: #cbd5e0;
