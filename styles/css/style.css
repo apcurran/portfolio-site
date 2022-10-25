@@ -49,6 +49,7 @@ p + p {
 
 .content-heading {
   font-size: var(--fz-xl);
+  font-weight: var(--bold);
   text-decoration: underline;
   text-decoration-style: wavy;
   text-decoration-color: var(--light-green);
@@ -521,7 +522,6 @@ textarea {
   text-align: center;
   margin-bottom: 5rem;
   color: #fff;
-  font-weight: 400;
 }
 .contact-form-field {
   display: flex;
