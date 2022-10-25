@@ -13,8 +13,6 @@
   --fz-xl: 2.25rem;
   --fz-lg: 1.5rem;
   --fz-md: 1.125rem;
-  --fz-sm: 1rem;
-  --fz-xs: .875rem;
   --bold: 600;
 }
 
@@ -603,7 +601,7 @@ textarea {
   text-align: center;
   color: #afbad0;
   font-weight: 400;
-  font-size: var(--fz-sm);
+  font-size: var(--fz-md);
 }
 
 @media screen and (max-width: 95em) {
