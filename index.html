@@ -353,5 +353,11 @@
             </div>
             <h3 class="footer-name">&copy; <time id="copyright-year"></time> Alex Curran</h3>
         </footer>
+        <script>
+            const copyrightYearSpan = document.getElementById("copyright-year");
+            const dateYear = new Date().getFullYear();
+            copyrightYearSpan.textContent = dateYear;
+            copyrightYearSpan.setAttribute("datetime", dateYear);
+        </script>
     </body>
 </html>

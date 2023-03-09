@@ -79,10 +79,3 @@ email.addEventListener("keyup", checkValidity);
 message.addEventListener("blur", checkValidity);
 message.addEventListener("keyup", checkValidity);
 form.addEventListener("submit", finalValidity);
-
-// Copyright year
-const yearSpan = document.getElementById("copyright-year");
-const dateYear = new Date().getFullYear();
-
-yearSpan.textContent = dateYear;
-yearSpan.setAttribute("datetime", dateYear);
