@@ -1,3 +1,3 @@
 # Portfolio
 
-[Link](https://currandev.com/)
+[View live site](https://currandev.com/)
