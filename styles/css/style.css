@@ -317,12 +317,12 @@ textarea {
 }
 
 .drop-para::first-letter {
-  float: left;
-  margin-top: 0.25rem;
-  margin-right: 0.55rem;
-  color: #4299E1;
+  --initial-letter-size: 2;
+  initial-letter: var(--initial-letter-size) var(--initial-letter-size);
+  -webkit-initial-letter: var(--initial-letter-size) var(--initial-letter-size);
+  margin-right: 0.75rem;
   font-size: 3.75rem;
-  line-height: 3rem;
+  color: #4299E1;
 }
 
 .drop-para-smallcaps {
