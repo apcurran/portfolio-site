@@ -326,8 +326,8 @@ textarea {
 }
 
 .drop-para-smallcaps {
-  font-size: 1.0625rem;
-  text-transform: uppercase;
+  font-size: var(--fz-md);
+  font-variant: small-caps;
   letter-spacing: 0.09em;
   color: var(--primary-txt-clr);
 }
