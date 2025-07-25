@@ -4,7 +4,9 @@
     "description": "[Link](https://currandev.com/)",
     "main": "./scripts/script.js",
     "scripts": {
-        "watch:sass": "sass --watch styles/sass:styles/css"
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
     },
     "repository": {
         "type": "git",

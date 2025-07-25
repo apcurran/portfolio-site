@@ -1,5 +1,7 @@
 "use strict";
 
+import "./styles/style.scss";
+
 const navSubMenuBtn = document.querySelector(".nav-sub-menu__title");
 const navSubMenu = document.querySelector(".nav-list-about");
 
@@ -42,7 +44,10 @@ const message = form.querySelector(".contact-input--message");
 const allUserInputs = form.querySelectorAll(".contact-user-input");
 
 function checkValidity(event) {
-    if (event.currentTarget.validity.valid && event.currentTarget.value !== "") {
+    if (
+        event.currentTarget.validity.valid &&
+        event.currentTarget.value !== ""
+    ) {
         const currentEl = event.currentTarget;
         const error = currentEl.nextElementSibling;
 
@@ -57,19 +62,19 @@ function finalValidity(event) {
             event.preventDefault();
 
             const error = input.nextElementSibling;
-            
+
             if (input.name === "name") {
                 error.textContent = "Please enter your full name.";
             } else if (input.name === "email") {
                 error.textContent = "Please enter a valid email address.";
             } else if (input.name === "message") {
-                error.textContent = "Please include a message before submitting.";
+                error.textContent =
+                    "Please include a message before submitting.";
             }
 
             error.classList.add("error-active");
         }
     });
-
 }
 
 username.addEventListener("blur", checkValidity);
