@@ -1,19 +1,25 @@
 {
-  "name": "portfolio-site",
-  "version": "1.0.0",
-  "description": "[Link](https://currandev.com/)",
-  "main": "./scripts/script.js",
-  "scripts": {
-    "watch:sass": "sass --watch styles/sass:styles/css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/apcurran/portfolio-site.git"
-  },
-  "author": "Alex Curran",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/apcurran/portfolio-site/issues"
-  },
-  "homepage": "https://github.com/apcurran/portfolio-site#readme"
+    "name": "portfolio-site",
+    "version": "1.0.0",
+    "description": "[Link](https://currandev.com/)",
+    "main": "./scripts/script.js",
+    "scripts": {
+        "watch:sass": "sass --watch styles/sass:styles/css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/apcurran/portfolio-site.git"
+    },
+    "author": "Alex Curran",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/apcurran/portfolio-site/issues"
+    },
+    "homepage": "https://github.com/apcurran/portfolio-site#readme",
+    "devDependencies": {
+        "oxlint": "^1.8.0",
+        "prettier": "3.6.2",
+        "sass-embedded": "^1.89.2",
+        "vite": "^7.0.6"
+    }
 }
