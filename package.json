@@ -9,7 +9,8 @@
         "preview": "vite preview",
         "lint:js:check": "npx oxlint .",
         "lint:js:write": "npx oxlint . --fix",
-        "format": "npx prettier ."
+        "format:check": "npx prettier . --check",
+        "format:write": "npx prettier . --write"
     },
     "repository": {
         "type": "git",
