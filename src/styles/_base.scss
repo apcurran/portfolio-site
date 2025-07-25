@@ -4,19 +4,16 @@
     --bg-clr: #0b395b;
     --primary-txt-clr: #1e293b;
     --light-green: #6ee7b7;
-    --dark-green: hsl(164, 86%, 14%);
-    --dark-grey: hsl(220, 26%, 10%);
-    --btn-glow: 0 0 20px rgba(110, 231, 183, 0.975);
-
+    --dark-green: hsl(164deg 86% 14%);
+    --dark-grey: hsl(220deg 26% 10%);
+    --btn-glow: 0 0 20px rgb(110 231 183 / 97.5%);
     --alt-ease: cubic-bezier(0.38, 0.63, 0.62, 0.92);
     --z-foreground-cta: 10;
     --z-foreground-menu: 10;
     --z-background: -10;
-
     --fz-xl: 2.25rem;
     --fz-lg: 1.5rem;
     --fz-md: 1.125rem;
-
     --bold: 600;
 }
 
@@ -86,7 +83,6 @@ p + p {
         height: 100%;
         border-radius: 500px;
         box-shadow: var(--btn-glow);
-
         will-change: opacity;
         transition: opacity 150ms ease-in-out;
         opacity: 0;

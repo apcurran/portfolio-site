@@ -1,4 +1,4 @@
-@media screen and (max-width: 95em) {
+@media screen and (width <= 95em) {
     .about-me::before,
     .about-me::after {
         width: 0;
@@ -6,7 +6,7 @@
     }
 }
 
-@media screen and (max-width: 47.5em) {
+@media screen and (width <= 47.5em) {
     .about-education-grid {
         grid-template-columns: 1fr;
         grid-template-rows: none;
@@ -29,7 +29,7 @@
     }
 }
 
-@media screen and (max-width: 37.5em) {
+@media screen and (width <= 37.5em) {
     .header {
         margin-top: 3.8rem; // Offset height of fixed navbar
 

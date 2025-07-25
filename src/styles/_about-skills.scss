@@ -3,7 +3,6 @@
     max-width: 90%;
     margin: 0 auto;
     padding: 6rem 0;
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 2rem;
@@ -18,16 +17,15 @@
 .about-skills-card {
     padding: 1.5rem 6rem;
     border-top: 5px solid #40a4f4;
-    box-shadow: 0 4px 12px hsla(0, 0%, 0%, 0.12);
+    box-shadow: 0 4px 12px hsl(0deg 0% 0% / 12%);
     background-color: #fff;
     border-radius: 4px;
 
     &-title {
         display: inline-block;
         padding-bottom: 0.25rem;
-        border-bottom: 1px solid hsl(213, 21%, 90%);
+        border-bottom: 1px solid hsl(213deg 21% 90%);
         margin-bottom: 0.75rem;
-
         font-size: var(--fz-md);
         color: var(--primary-txt-clr);
     }

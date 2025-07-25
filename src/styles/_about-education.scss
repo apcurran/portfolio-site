@@ -22,8 +22,7 @@
         height: auto;
         grid-column: 1 / 2;
         grid-row: 1 / -1;
-        justify-self: center;
-        align-self: center;
+        place-self: center center;
     }
 
     &-img {
@@ -41,7 +40,7 @@
         }
 
         &-subtitle {
-            color: hsl(215, 16%, 46%);
+            color: hsl(215deg 16% 46%);
             font-weight: var(--bold);
             font-size: var(--fz-md);
         }

@@ -1,5 +1,5 @@
 .portfolio {
-    padding: 6rem 0rem;
+    padding: 6rem 0;
 
     &-title {
         margin-bottom: 2rem;
@@ -10,7 +10,6 @@
         width: 70rem;
         max-width: 90%;
         margin: 0 auto;
-
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
         grid-gap: 3rem 2rem;
@@ -18,7 +17,7 @@
 }
 
 .portfolio-card {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 3px 5px rgb(0 0 0 / 22%);
     background-color: #fff;
     border-radius: 4px;
 
@@ -66,7 +65,6 @@
                         opacity 120ms ease-in-out,
                         transform 120ms ease-in-out;
                     pointer-events: none;
-
                     position: absolute;
                     left: 50%;
                     bottom: 0;
@@ -77,13 +75,14 @@
                     padding: 0.5rem 0.75rem;
                     border-radius: 4px;
                     background-color: #32325d;
-                    color: hsl(217, 97%, 99%);
+                    color: hsl(217deg 97% 99%);
                 }
 
                 &:hover::before {
                     opacity: 1;
                     transform: translate(-50%, 110%) scale(1);
                 }
+
                 // End Tooltip
             }
         }
