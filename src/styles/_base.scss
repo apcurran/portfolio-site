@@ -30,6 +30,16 @@ img {
     display: block;
 }
 
+// typography
+a,
+p,
+button,
+label,
+input,
+textarea {
+    font-size: var(--fz-md);
+}
+
 a {
     color: var(--primary-txt-clr);
     text-decoration: none;
@@ -92,14 +102,4 @@ p + p {
     &:focus::after {
         opacity: 1;
     }
-}
-
-// typography
-a,
-p,
-button,
-label,
-input,
-textarea {
-    font-size: var(--fz-md);
 }
