@@ -18,7 +18,7 @@
 }
 
 .portfolio-card {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, .22);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
     background-color: #fff;
     border-radius: 4px;
 
@@ -35,7 +35,7 @@
 
     &-title,
     &-icons-list {
-        margin-bottom: .75rem;
+        margin-bottom: 0.75rem;
     }
 
     &-title {
@@ -44,7 +44,6 @@
     }
 
     &-icons {
-
         &-list {
             list-style: none;
             display: flex;
@@ -58,23 +57,24 @@
             &-link {
                 position: relative;
                 display: inline-flex;
-                padding: .75rem;
+                padding: 0.75rem;
 
                 // Begin Tooltip
                 &::before {
                     opacity: 0;
-                    transition: opacity 120ms ease-in-out,
-                                transform 120ms ease-in-out;
+                    transition:
+                        opacity 120ms ease-in-out,
+                        transform 120ms ease-in-out;
                     pointer-events: none;
 
                     position: absolute;
                     left: 50%;
                     bottom: 0;
-                    transform: translate(-50%, 110%) scale(.8);
+                    transform: translate(-50%, 110%) scale(0.8);
                     content: attr(data-tooltip);
                     width: 100%;
                     text-align: center;
-                    padding: .5rem .75rem;
+                    padding: 0.5rem 0.75rem;
                     border-radius: 4px;
                     background-color: #32325d;
                     color: hsl(217, 97%, 99%);
@@ -88,5 +88,4 @@
             }
         }
     }
-
 }

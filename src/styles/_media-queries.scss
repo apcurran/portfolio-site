@@ -32,12 +32,11 @@
 @media screen and (max-width: 37.5em) {
     .header {
         margin-top: 3.8rem; // Offset height of fixed navbar
-    
+
         &-info-projects {
             margin-top: 1rem;
         }
     }
-    
 
     .nav {
         justify-content: center;
@@ -54,7 +53,7 @@
     }
 
     .nav-list-main-item-link {
-        padding: .75rem 1.5rem;
+        padding: 0.75rem 1.5rem;
     }
 
     .about-skills {
@@ -65,12 +64,18 @@
         }
     }
 
-    .floater { left: 0; }
+    .floater {
+        left: 0;
+    }
 
     // Eliminate delay on mobile scroll
-    .slider2 { transition-delay: 0ms; }
+    .slider2 {
+        transition-delay: 0ms;
+    }
 
-    .slider3 { transition-delay: 0ms; }
+    .slider3 {
+        transition-delay: 0ms;
+    }
 
     .nav-sub-menu-about::after {
         right: 0;

@@ -6,13 +6,13 @@
     --light-green: #6ee7b7;
     --dark-green: hsl(164, 86%, 14%);
     --dark-grey: hsl(220, 26%, 10%);
-    --btn-glow: 0 0 20px rgba(110, 231, 183, .975);
+    --btn-glow: 0 0 20px rgba(110, 231, 183, 0.975);
 
-    --alt-ease: cubic-bezier(.38,.63,.62,.92);
+    --alt-ease: cubic-bezier(0.38, 0.63, 0.62, 0.92);
     --z-foreground-cta: 10;
     --z-foreground-menu: 10;
     --z-background: -10;
-    
+
     --fz-xl: 2.25rem;
     --fz-lg: 1.5rem;
     --fz-md: 1.125rem;
@@ -71,7 +71,7 @@ p + p {
     color: var(--dark-green);
     font-weight: var(--bold);
     text-transform: uppercase;
-    letter-spacing: .08em;
+    letter-spacing: 0.08em;
     cursor: pointer;
     outline: none;
 
@@ -86,7 +86,7 @@ p + p {
         height: 100%;
         border-radius: 500px;
         box-shadow: var(--btn-glow);
-    
+
         will-change: opacity;
         transition: opacity 150ms ease-in-out;
         opacity: 0;
