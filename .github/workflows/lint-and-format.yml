@@ -2,7 +2,7 @@ name: Format and Lint Code
 on:
     push:
         branches:
-            - main
+            - master
 jobs:
     format-lint:
         runs-on: ubuntu-latest
