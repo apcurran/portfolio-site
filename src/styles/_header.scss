@@ -17,10 +17,30 @@
         position: relative;
     }
 
-    // Dropdown btn
     &-sub-menu__title {
         background: none;
         border: none;
+
+        // Dropdown Menu Chevron
+        position: relative;
+
+        &::after {
+            content: "";
+            top: 52%;
+            right: 0.25rem;
+            transform: translateY(-55%) rotate(0);
+            transition: transform 300ms ease;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background-image: url("/assets/images/icons/icon-cheveron-down.svg");
+            background-repeat: no-repeat;
+        }
+
+        // Animate chevron
+        &--rotate::after {
+            transform: translateY(-45%) rotate(-180deg);
+        }
 
         &:focus {
             text-decoration: underline;
@@ -112,29 +132,6 @@
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
-}
-
-// Dropdown Menu Chevron
-.nav-sub-menu__title {
-    position: relative;
-
-    &::after {
-        content: "";
-        top: 52%;
-        right: 0.25rem;
-        transform: translateY(-55%) rotate(0);
-        transition: transform 300ms ease;
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        background-image: url("/assets/images/icons/icon-cheveron-down.svg");
-        background-repeat: no-repeat;
-    }
-}
-
-// Animate chevron
-.nav-sub-menu__title--rotate::after {
-    transform: translateY(-45%) rotate(-180deg);
 }
 
 // Section scroll highlight link styling
