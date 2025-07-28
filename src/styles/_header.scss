@@ -138,25 +138,6 @@
     position: relative;
     min-height: 88vh;
 
-    &-info {
-        margin-top: 6.5rem;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        &-title {
-            margin: 2rem 0;
-        }
-
-        &-projects {
-            margin-top: 6rem;
-        }
-    }
-
     // Skewed background
     &::before {
         content: "";
@@ -184,6 +165,15 @@
 }
 
 .header-info {
+    margin-top: 6.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     &-title,
     &-projects {
         opacity: 0;
@@ -192,12 +182,14 @@
     }
 
     &-title {
+        margin: 2rem 0;
         font-size: var(--fz-lg);
         font-weight: var(--bold);
         animation-delay: 200ms;
     }
 
     &-projects {
+        margin-top: 6rem;
         animation-delay: 400ms;
     }
 }
