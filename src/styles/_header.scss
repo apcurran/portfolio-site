@@ -13,6 +13,20 @@
     display: flex;
     justify-content: flex-end;
 
+    &-sub-menu {
+        position: relative;
+    }
+
+    // Dropdown btn
+    &-sub-menu__title {
+        background: none;
+        border: none;
+
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+
     &-list-main {
         display: flex;
         align-items: center;
@@ -30,20 +44,6 @@
             &:focus {
                 text-decoration: underline;
             }
-        }
-    }
-
-    &-sub-menu {
-        position: relative;
-    }
-
-    // Dropdown btn
-    &-sub-menu__title {
-        background: none;
-        border: none;
-
-        &:focus {
-            text-decoration: underline;
         }
     }
 }
