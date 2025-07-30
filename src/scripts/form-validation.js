@@ -20,19 +20,6 @@ export function initFormValidation() {
         return;
     }
 
-    function checkValidity(event) {
-        if (
-            event.currentTarget.validity.valid &&
-            event.currentTarget.value !== ""
-        ) {
-            const currentEl = event.currentTarget;
-            const error = currentEl.nextElementSibling;
-
-            error.textContent = "";
-            error.classList.remove("error-active");
-        }
-    }
-
     function finalValidity(event) {
         allUserInputs.forEach((input) => {
             if (!input.validity.valid || input.value === "") {
@@ -62,4 +49,17 @@ export function initFormValidation() {
     message.addEventListener("keyup", checkValidity);
 
     form.addEventListener("submit", finalValidity);
+}
+
+function checkValidity(event) {
+    if (
+        event.currentTarget.validity.valid &&
+        event.currentTarget.value !== ""
+    ) {
+        const currentEl = event.currentTarget;
+        const error = currentEl.nextElementSibling;
+
+        error.textContent = "";
+        error.classList.remove("error-active");
+    }
 }
