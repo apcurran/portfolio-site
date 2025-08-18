@@ -3,7 +3,7 @@ export function initVideoPopover() {
     const videoLinks = document.querySelectorAll(
         ".portfolio-card-icons-item-link[aria-label='Video']",
     );
-    /** @type {HTMLDialogElement} */
+    /** @type {HTMLDivElement} */
     const popover = document.querySelector(".video-popover");
     /** @type {HTMLVideoElement} */
     const video = popover?.querySelector("video");
@@ -19,10 +19,12 @@ export function initVideoPopover() {
     }
 
     popover.addEventListener(
-        "close",
-        function handleVideoPopoverCloseCleanup() {
-            video.pause();
-            video.src = "";
+        "toggle",
+        function handleVideoPopoverCloseCleanup(event) {
+            if (event.newState === "closed") {
+                video.pause();
+                video.src = "";
+            }
         },
     );
 }
