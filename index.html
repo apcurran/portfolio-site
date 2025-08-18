@@ -850,10 +850,17 @@
                 &copy; <time id="copyright-year"></time> Alex Curran
             </h3>
         </footer>
-        <div class="video-popover" popover="auto">
+        <div id="video-popover" class="video-popover" popover="auto">
             <video src="" controls autoplay>
                 Sorry, but your browser does not support embedded videos.
             </video>
+            <button
+                class="popover-close-button"
+                popovertarget="video-popover"
+                popovertargetaction="hide"
+            >
+                Close
+            </button>
         </div>
         <script>
             const copyrightYearSpan = document.getElementById("copyright-year");
