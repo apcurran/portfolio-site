@@ -58,18 +58,23 @@ p + p {
     background-color: #c3dafe;
 }
 
-dialog {
-    width: min(60rem, 80%);
-
-    &:popover-open::backdrop {
-        background-color: rgb(0 0 0 / 90%);
-    }
+[popover] {
+    border: none;
+    margin: auto; // keep default "auto" value to remain centered
 
     video {
+        display: block;
         width: 100%;
         height: 100%;
-        display: block;
     }
+}
+
+:popover-open {
+    width: min(70rem, 90%);
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 90%);
 }
 
 .content-heading {
