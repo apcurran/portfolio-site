@@ -4,22 +4,25 @@ export function initVideoPopover() {
         ".portfolio-card-icons-item-link[aria-label='Video']",
     );
     /** @type {HTMLDialogElement} */
-    const dialog = document.querySelector(".dialog-popover");
+    const popover = document.querySelector(".video-popover");
     /** @type {HTMLVideoElement} */
-    const dialogVideo = dialog?.querySelector("video");
+    const video = popover?.querySelector("video");
 
     for (let videoLink of videoLinks) {
         videoLink.addEventListener("click", function handleVideoPopover(event) {
             event.preventDefault();
 
-            dialogVideo.src = videoLink.href;
-            dialog.showPopover();
-            dialogVideo.play();
+            video.src = videoLink.href;
+            popover.showPopover();
+            video.play();
         });
     }
 
-    dialog.addEventListener("close", function handleVideoPopoverCloseCleanup() {
-        dialogVideo.pause();
-        dialogVideo.src = "";
-    });
+    popover.addEventListener(
+        "close",
+        function handleVideoPopoverCloseCleanup() {
+            video.pause();
+            video.src = "";
+        },
+    );
 }
