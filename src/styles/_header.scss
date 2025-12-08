@@ -125,6 +125,10 @@
     }
 }
 
+.nav-sub-menu__title {
+    anchor-name: --anchor-menu-button;
+}
+
 .nav::after {
     content: "";
     position: absolute;
@@ -136,25 +140,34 @@
     background: linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
 }
 
-.nav-list-about {
-    visibility: hidden;
-    position: absolute;
-    right: 0;
+.popover-menu {
+    width: auto;
+}
+
+.popover-menu::backdrop {
+    background-color: transparent;
+}
+
+.nav-list-about:popover-open {
     display: flex;
-    list-style: none;
-    background-color: #fff;
-    box-shadow: 0 7px 17px hsl(210deg 8% 62% / 20%);
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.nav-list-about {
+    position-anchor: --anchor-menu-button;
+    position-area: bottom span-left;
+
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0 7px 17px hsl(210deg 8% 62% / 20%);
     border-radius: 5px;
     will-change: transform;
-    transform: translateY(-20px);
+    // transform: translateY(-20px);
     transition:
         opacity 300ms ease,
         transform 300ms ease;
-    opacity: 0;
-    z-index: var(--z-foreground-menu);
 
     &-item {
         width: 100%;

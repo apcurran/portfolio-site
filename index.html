@@ -59,12 +59,15 @@
                         <button
                             type="button"
                             class="nav-sub-menu__title"
-                            aria-controls="nav-links-dropdown"
-                            aria-expanded="false"
+                            popovertarget="nav-links-dropdown"
                         >
                             About
                         </button>
-                        <ul class="nav-list-about" id="nav-links-dropdown">
+                        <ul
+                            class="nav-list-about popover-menu"
+                            id="nav-links-dropdown"
+                            popover="auto"
+                        >
                             <li class="nav-list-about-item">
                                 <a href="#about-me" class="nav-list-about-link"
                                     >About Me</a
