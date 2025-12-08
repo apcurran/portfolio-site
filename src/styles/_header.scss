@@ -140,6 +140,7 @@
     background: linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
 }
 
+// nav dropdown menu (Popover API)
 .popover-menu {
     width: auto;
 }
@@ -149,25 +150,37 @@
 }
 
 .nav-list-about:popover-open {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    transition-delay: 0ms;
 }
 
 .nav-list-about {
     position-anchor: --anchor-menu-button;
     position-area: bottom span-left;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
     list-style: none;
     background-color: #fff;
     box-shadow: 0 7px 17px hsl(210deg 8% 62% / 20%);
     border-radius: 5px;
+
+    visibility: hidden; /* NEED this to allow for the elem to be hidden at first, while allowing animation to continue normally */
     will-change: transform;
-    // transform: translateY(-20px);
+    // final state of EXIT animation
+    opacity: 0;
+    transform: translateY(-20px);
     transition:
         opacity 300ms ease,
-        transform 300ms ease;
+        transform 300ms ease,
+        visibility 0ms 300ms,
+        overlay 300ms allow-discrete,
+        display 300ms allow-discrete;
 
     &-item {
         width: 100%;
@@ -194,9 +207,9 @@
     }
 }
 
-// Animate drop-down
-.nav-list-about--show {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
+@starting-style {
+    .nav-list-about:popover-open {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
 }
