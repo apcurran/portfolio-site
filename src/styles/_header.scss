@@ -94,11 +94,6 @@
             background-repeat: no-repeat;
         }
 
-        // Animate chevron
-        &--rotate::after {
-            transform: translateY(-45%) rotate(-180deg);
-        }
-
         &:focus {
             text-decoration: underline;
         }
@@ -122,6 +117,13 @@
                 text-decoration: underline;
             }
         }
+    }
+}
+
+// animate chevron when popover is opened
+.nav-sub-menu:has(.nav-list-about:popover-open) {
+    .nav-sub-menu__title::after {
+        transform: translateY(-45%) rotate(-180deg);
     }
 }
 
