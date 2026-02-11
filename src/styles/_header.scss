@@ -161,19 +161,17 @@
 .nav-list-about {
     position-anchor: --anchor-menu-button;
     position-area: bottom span-left;
-
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
     list-style: none;
     background-color: #fff;
     box-shadow: 0 7px 17px hsl(210deg 8% 62% / 20%);
     border-radius: 5px;
-
     visibility: hidden; /* NEED this to allow for the elem to be hidden at first, while allowing animation to continue normally */
     will-change: transform;
+
     // final state of EXIT animation
     opacity: 0;
     transform: translateY(-20px);
