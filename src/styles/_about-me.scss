@@ -13,8 +13,7 @@
         top: 0;
         right: 0;
         transform: translate(183%, 10%) rotate(-180deg);
-        background: url("/assets/images/texture-triangle-blue.svg") no-repeat
-            center center;
+        background: url("/assets/images/texture-triangle-blue.svg") no-repeat center center;
     }
 
     &::after {
@@ -25,8 +24,7 @@
         bottom: 0;
         left: 0;
         transform: translate(-183%, -10%);
-        background: url("/assets/images/texture-triangle-blue.svg") no-repeat
-            center center;
+        background: url("/assets/images/texture-triangle-blue.svg") no-repeat center center;
     }
 
     &-title {
@@ -39,8 +37,7 @@
     --initial-letter-size: 2;
 
     initial-letter: var(--initial-letter-size) var(--initial-letter-size);
-    -webkit-initial-letter: var(--initial-letter-size)
-        var(--initial-letter-size);
+    -webkit-initial-letter: var(--initial-letter-size) var(--initial-letter-size);
     margin-right: 0.75rem;
     font-size: 3.75rem;
     color: #4299e1;

@@ -18,13 +18,10 @@ export function initVideoPopover() {
         });
     }
 
-    popover.addEventListener(
-        "toggle",
-        function handleVideoPopoverCloseCleanup(event) {
-            if (event.newState === "closed") {
-                video.pause();
-                video.src = "";
-            }
-        },
-    );
+    popover.addEventListener("toggle", function handleVideoPopoverCloseCleanup(event) {
+        if (event.newState === "closed") {
+            video.pause();
+            video.src = "";
+        }
+    });
 }
