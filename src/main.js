@@ -1,5 +1,3 @@
-"use strict";
-
 import "./styles/style.scss";
 
 import { initFormValidation } from "./scripts/form-validation";
