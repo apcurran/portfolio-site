@@ -25,11 +25,11 @@
         "lint:css:write": "npx stylelint '**/*.scss' --fix"
     },
     "devDependencies": {
-        "oxfmt": "^0.40.0",
-        "oxlint": "^1.55.0",
-        "sass-embedded": "^1.98.0",
-        "stylelint": "^17.4.0",
+        "oxfmt": "^0.44.0",
+        "oxlint": "^1.59.0",
+        "sass-embedded": "^1.99.0",
+        "stylelint": "^17.6.0",
         "stylelint-config-standard-scss": "^17.0.0",
-        "vite": "^8.0.0"
+        "vite": "^8.0.7"
     }
 }
