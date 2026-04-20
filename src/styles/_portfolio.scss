@@ -16,16 +16,21 @@
     }
 }
 
+.portfolio-card,
+.portfolio-card-img {
+    corner-shape: squircle;
+}
+
 .portfolio-card {
     box-shadow: 0 3px 5px rgb(0 0 0 / 22%);
     background-color: #fff;
-    border-radius: 4px;
+    border-radius: var(--squircle-round-size-md);
 
     &-img {
         width: 100%;
         height: auto;
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
+        border-top-left-radius: var(--squircle-round-size-md);
+        border-top-right-radius: var(--squircle-round-size-md);
     }
 
     &-content {
