@@ -43,9 +43,10 @@
 
         &-textarea {
             resize: none;
-            padding: 0.5rem;
+            padding: 0.5rem 0.75rem;
             border: none;
-            border-radius: 4px;
+            corner-shape: squircle;
+            border-radius: var(--squircle-round-size-md);
             font-family: "Work Sans", sans-serif;
         }
 
