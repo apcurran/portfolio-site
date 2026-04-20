@@ -19,7 +19,8 @@
     border-top: 5px solid #40a4f4;
     box-shadow: 0 4px 12px hsl(0deg 0% 0% / 12%);
     background-color: #fff;
-    border-radius: 4px;
+    corner-shape: squircle;
+    border-radius: var(--squircle-round-size-sm);
 
     &-title {
         display: inline-block;
