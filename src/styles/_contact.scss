@@ -36,7 +36,11 @@
             transition: border-bottom 200ms ease;
             color: #fff;
 
-            &:focus {
+            &:user-invalid {
+                border-bottom: 2px solid var(--mid-red);
+            }
+
+            &:user-valid {
                 border-bottom: 2px solid var(--light-green);
             }
         }
@@ -44,10 +48,19 @@
         &-textarea {
             resize: none;
             padding: 0.5rem 0.75rem;
-            border: none;
+            border: 2px solid #999;
             corner-shape: squircle;
             border-radius: var(--squircle-round-size-md);
             font-family: "Work Sans", sans-serif;
+            transition: border 200ms ease;
+
+            &:user-invalid {
+                border: 2px solid var(--mid-red);
+            }
+
+            &:user-valid {
+                border: 2px solid var(--light-green);
+            }
         }
 
         &-submit-btn {
@@ -55,8 +68,8 @@
         }
 
         &-error {
-            background-color: #c6f6d5;
-            color: #222;
+            background-color: var(--light-red);
+            color: var(--dark-red);
             border-radius: 0 0 4px 4px;
         }
 
