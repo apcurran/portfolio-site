@@ -27,6 +27,11 @@
             font-weight: var(--bold);
         }
 
+        &-input,
+        &-textarea {
+            field-sizing: content;
+        }
+
         &-input {
             padding: 0.5rem;
             border: none;
