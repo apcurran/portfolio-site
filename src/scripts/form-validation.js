@@ -20,7 +20,7 @@ export function initFormValidation() {
 
     function finalValidity(event) {
         allUserInputs.forEach((input) => {
-            if (!input.validity.valid || input.value === "") {
+            if (!input.validity.valid || input.value.trim() === "") {
                 event.preventDefault();
 
                 const error = input.nextElementSibling;
