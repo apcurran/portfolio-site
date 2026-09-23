@@ -32,6 +32,10 @@
             field-sizing: content;
         }
 
+        &-textarea {
+            min-block-size: 5lh;
+        }
+
         &-input {
             padding: 0.5rem;
             border: none;
